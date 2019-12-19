@@ -28,11 +28,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  background-color: #000;
+  height: 75px;
+}
+
+.navbar img {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.show-nav {
+  height: 100px;
+}
+
+.defaultHero,
+.shipsHero {
+  min-height: calc(100vh - 75px);
+  background-image: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shipsHero {
+  min-height: 70vh;
+  background-image: none;
 }
