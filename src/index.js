@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import WebFont from "webfontloader";
+import {ShipProvider} from "./context"; 
 
 WebFont.load({
     google: {
@@ -13,11 +14,11 @@ WebFont.load({
 })
 
 ReactDOM.render(
-
-<Router>
-    <App />
-</Router>
-
+    <ShipProvider>        
+        <Router>
+            <App />
+        </Router>
+    </ShipProvider>
 
 , document.getElementById('root'));
 
