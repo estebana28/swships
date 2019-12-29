@@ -1,0 +1,14 @@
+var arrai = new Array;
+const urls = ['https://swapi.co/api/starships/', 'https://swapi.co/api/starships/?page=2', 'https://swapi.co/api/starships/?page=3', 'https://swapi.co/api/starships/?page=4']
+
+urls.forEach(function(url) {
+   fetch(url)
+    .then(response => response.json())
+    .then(response => {
+      let data = response.results
+      for(var i = 0; i < data.length; i++) {
+        arrai.push(data[i]) }
+    })
+    })
+
+console.log(arrai)
