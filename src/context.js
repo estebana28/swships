@@ -19,7 +19,12 @@ componentDidMount(){
     let ships = this.formatData(datas)
 }
 
-
+formatData(datas){
+    let tempDatas = datas.map(data => {
+        let id = data.sys.id
+        let datas.fields.images.map(image => image.fields.file.url);
+    })
+}
 
 
     render() {
