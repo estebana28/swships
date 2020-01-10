@@ -5,7 +5,7 @@ const ShipContext = React.createContext();
 
 //
 
- class ShipProvider extends Component {
+class ShipProvider extends Component {
     state={
         ships:[],
         sortedShips:[],
@@ -16,14 +16,25 @@ const ShipContext = React.createContext();
 // GetData
 
 componentDidMount(){
-    let ships = this.formatData(datas)
+    let ships = this.formatData(datas);
+    let featuredShips = ships.filter(ship => ship.feature === true);
+    this.setState({
+        ships,
+        featuredShips, 
+        sortedShips:ships, 
+        loading:false
+    });
 }
 
 formatData(datas){
     let tempDatas = datas.map(data => {
-        let id = data.sys.id
-        let datas.fields.images.map(image => image.fields.file.url);
-    })
+        let id = data.id;
+        let images = data.descrip.images.map(image => image.descrip.image);
+
+        let ship = {...datas.descrip, images, id}
+        return ship;
+    });
+    return tempDatas;
 }
 
 
