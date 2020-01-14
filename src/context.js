@@ -17,14 +17,13 @@ export default class ShipProvider extends Component {
 
 componentDidMount() {
     let ships = this.formatData(items);
-    console.log(ships);
-    // let featuredShips = ships.filter(ship => ship.feature === true);
-    // this.setState({
-    //     ships,
-    //     featuredShips, 
-    //     sortedShips:ships, 
-    //     loading:false
-    // });
+    let featuredShips = ships.filter(ship => ship.featured === true);
+    this.setState({
+        ships,
+        featuredShips, 
+        sortedShips:ships, 
+        loading:false
+    });
 }
 
 formatData(items) {

@@ -1,54 +1,54 @@
-import ship1_1 from "./src/images/ships/star-destroyer.jpg";
-import ship1_2 from "./src/images/ships/star-destroyer-2.jpg";
-import ship2_1 from "./src/images/ships/trade-federation-cruiser.jpg";
-import ship4_1 from "./src/images/ships/t-70.jpg";
-// import ship4_2 from "./src/images/ships/t-70-2.jpg";
-// import ship5_1 from "./src/images/ships/rebel-transport.jpg";
-// import ship5_2 from "./src/images/ships/rebel-transport-2.jpg";
-// import ship6_1 from "./src/images/ships/droid-control-ship.jpg";
-// import ship6_2 from "./src/images/ships/droid-control-ship2.jpg";
-// import ship7_1 from "./src/images/ships/republic-assault-ship.jpg";
-// import ship7_2 from "./src/images/ships/republic-assault-ship-2.jpg";
-// import ship9_1 from "./src/images/ships/republic-attack-cruiser.jpg";
-// import ship9_2 from "./src/images/ships/republic-attack-cruiser-2.jpg";
-// import ship10_1 from "./src/images/ships/executor.jpg";
-// import ship10_2 from "./src/images/ships/executor-2.jpg";
-// import ship12_1 from "./src/images/ships/death-star.jpg";
-// import ship12_2 from "./src/images/ships/death-star-2.jpg";
-// import ship13_1 from "./src/images/ships/millennium-falcon.jpg";
-// import ship13_2 from "./src/images/ships/millennium-falcon-2.jpg";
-// import ship14_1 from "./src/images/ships/y-wing.jpg";
-// import ship14_2 from "./src/images/ships/y-wing-2.jpg";
-// import ship15_1 from "./src/images/ships/x-wing.jpg";
-// import ship15_2 from "./src/images/ships/x-wing-2.jpg";
-// import ship16_1 from "./src/images/ships/tie.jpg";
-// import ship16_2 from "./src/images/ships/tie-2.jpg";
-// import ship18_1 from "./src/images/ships/imperial-shuttle.jpg";
-// import ship18_2 from "./src/images/ships/imperial-shuttle-2.jpg";
-// import ship19_1 from "./src/images/ships/ef76-frigate.jpg";
-// import ship19_2 from "./src/images/ships/ef76-frigate-2.jpg";
-// import ship22_1 from "./src/images/ships/arc-170.jpg";
-// import ship22_2 from "./src/images/ships/arc-170-2.jpg";
-// import ship24_1 from "./src/images/ships/v-wing.jpg";
-// import ship24_2 from "./src/images/ships/v-wing-2.jpg";
-// import ship25_1 from "./src/images/ships/cr90-corvette.jpg";
-// import ship25_2 from "./src/images/ships/cr90-corvette-2.jpg";
-// import ship26_1 from "./src/images/ships/banking-frigate.jpg";
-// import ship26_2 from "./src/images/ships/banking-frigate-2.jpg";
-// import ship27_1 from "./src/images/ships/calamari-cruiser.jpg";
-// import ship27_2 from "./src/images/ships/calamari-cruiser-2.jpg";
-// import ship29_1 from "./src/images/ships/b-wing.jpg";
-// import ship29_2 from "./src/images/ships/b-wing-2.jpg";
-// import ship31_1 from "./src/images/ships/naboo-fighter.jpg";
-// import ship31_2 from "./src/images/ships/naboo-fighter-2.jpg";
-// import ship33_1 from "./src/images/ships/scimitar.jpg";
-// import ship33_2 from "./src/images/ships/scimitar-2.jpg";
-// import ship34_1 from "./src/images/ships/j-type-diplomatic-barge.jpg";
-// import ship34_2 from "./src/images/ships/j-type-diplomatic-barge-2.jpg";
-// import ship35_1 from "./src/images/ships/aa9-coruscant-freighter.jpg";
-// import ship35_2 from "./src/images/ships/aa9-coruscant-freighter-2.jpg";
-// import ship36_1 from "./src/images/ships/jedi-starfighter.jpg";
-// import ship36_2 from "./src/images/ships/jedi-starfighter2.jpg";
+import ship1_1 from "./images/ships/star-destroyer.jpg";
+import ship1_2 from "./images/ships/star-destroyer-2.jpg";
+import ship2_1 from "./images/ships/trade-federation-cruiser.jpg";
+import ship4_1 from "./images/ships/t-70.jpg";
+// import ship4_2 from "./images/ships/t-70-2.jpg";
+// import ship5_1 from "./images/ships/rebel-transport.jpg";
+// import ship5_2 from "./images/ships/rebel-transport-2.jpg";
+// import ship6_1 from "./images/ships/droid-control-ship.jpg";
+// import ship6_2 from "./images/ships/droid-control-ship2.jpg";
+// import ship7_1 from "./images/ships/republic-assault-ship.jpg";
+// import ship7_2 from "./images/ships/republic-assault-ship-2.jpg";
+// import ship9_1 from "./images/ships/republic-attack-cruiser.jpg";
+// import ship9_2 from "./images/ships/republic-attack-cruiser-2.jpg";
+// import ship10_1 from "./images/ships/executor.jpg";
+// import ship10_2 from "./images/ships/executor-2.jpg";
+// import ship12_1 from "./images/ships/death-star.jpg";
+// import ship12_2 from "./images/ships/death-star-2.jpg";
+// import ship13_1 from "./images/ships/millennium-falcon.jpg";
+// import ship13_2 from "./images/ships/millennium-falcon-2.jpg";
+// import ship14_1 from "./images/ships/y-wing.jpg";
+// import ship14_2 from "./images/ships/y-wing-2.jpg";
+// import ship15_1 from "./images/ships/x-wing.jpg";
+// import ship15_2 from "./images/ships/x-wing-2.jpg";
+// import ship16_1 from "./images/ships/tie.jpg";
+// import ship16_2 from "./images/ships/tie-2.jpg";
+// import ship18_1 from "./images/ships/imperial-shuttle.jpg";
+// import ship18_2 from "./images/ships/imperial-shuttle-2.jpg";
+// import ship19_1 from "./images/ships/ef76-frigate.jpg";
+// import ship19_2 from "./images/ships/ef76-frigate-2.jpg";
+// import ship22_1 from "./images/ships/arc-170.jpg";
+// import ship22_2 from "./images/ships/arc-170-2.jpg";
+// import ship24_1 from "./images/ships/v-wing.jpg";
+// import ship24_2 from "./images/ships/v-wing-2.jpg";
+// import ship25_1 from "./images/ships/cr90-corvette.jpg";
+// import ship25_2 from "./images/ships/cr90-corvette-2.jpg";
+// import ship26_1 from "./images/ships/banking-frigate.jpg";
+// import ship26_2 from "./images/ships/banking-frigate-2.jpg";
+// import ship27_1 from "./images/ships/calamari-cruiser.jpg";
+// import ship27_2 from "./images/ships/calamari-cruiser-2.jpg";
+// import ship29_1 from "./images/ships/b-wing.jpg";
+// import ship29_2 from "./images/ships/b-wing-2.jpg";
+// import ship31_1 from "./images/ships/naboo-fighter.jpg";
+// import ship31_2 from "./images/ships/naboo-fighter-2.jpg";
+// import ship33_1 from "./images/ships/scimitar.jpg";
+// import ship33_2 from "./images/ships/scimitar-2.jpg";
+// import ship34_1 from "./images/ships/j-type-diplomatic-barge.jpg";
+// import ship34_2 from "./images/ships/j-type-diplomatic-barge-2.jpg";
+// import ship35_1 from "./images/ships/aa9-coruscant-freighter.jpg";
+// import ship35_2 from "./images/ships/aa9-coruscant-freighter-2.jpg";
+// import ship36_1 from "./images/ships/jedi-starfighter.jpg";
+// import ship36_2 from "./images/ships/jedi-starfighter2.jpg";
 
 
 
@@ -71,12 +71,13 @@ export default  [
         max_atmosphering_speed: "975",
         crew: "47060",
         passengers: "0",
-        cargo_capacity: "36000000"
+        cargo_capacity: "36000000",
+        featured: false
     },
     images: [
         {
             image: {
-                'url': 'ship1_1',
+                'url': './images/ships/star-destroyer.jpg',
             }
         },
         {
@@ -100,6 +101,7 @@ export default  [
         crew: "600",
         passengers: "48247",
         cargo_capacity: "50000000",
+        featured: true,
     },
     images: [
         {

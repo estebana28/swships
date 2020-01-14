@@ -23,7 +23,7 @@ export default class Services extends Component {
             {
                 img: Mapis,
                 title: "Delivery GalaxyWide",
-                info: "We deliver you purchased ship anyware in the whole universe"
+                info: "We deliver your purchased ship anyware in the whole universe"
             },
             {
                 img: Rebel,
