@@ -1,41 +1,42 @@
 import React, { Component } from 'react';
-import datas from './data';
+import items from './data';
 
 const ShipContext = React.createContext();
 
 //
 
-class ShipProvider extends Component {
-    state={
-        ships:[],
-        sortedShips:[],
-        featuredShips:[],
-        loading:true,
-    }
+export default class ShipProvider extends Component {
+    state = {
+        ships: [],
+        sortedShips: [],
+        featuredShips: [],
+        loading: true,
+    };
 
 // GetData
 
-componentDidMount(){
-    let ships = this.formatData(datas);
-    let featuredShips = ships.filter(ship => ship.feature === true);
-    this.setState({
-        ships,
-        featuredShips, 
-        sortedShips:ships, 
-        loading:false
-    });
+componentDidMount() {
+    let ships = this.formatData(items);
+    console.log(ships);
+    // let featuredShips = ships.filter(ship => ship.feature === true);
+    // this.setState({
+    //     ships,
+    //     featuredShips, 
+    //     sortedShips:ships, 
+    //     loading:false
+    // });
 }
 
-formatData(datas){
-    let tempDatas = datas.map(data => {
-        let id = data.id;
-        let images = data.descrip.images.map(image => image.descrip.image);
+formatData(items) {
+    let tempItems = items.map(item => {
+        let id = item.core.id;
+        let images = item.images.map(image => image.image.url);
 
-        let ship = {...datas.descrip, images, id}
+        let ship = {...item.descrip, images, id}
         return ship;
     });
-    return tempDatas;
-}
+    return tempItems;
+};
 
 
     render() {
