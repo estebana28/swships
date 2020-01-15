@@ -72,17 +72,17 @@ export default  [
         crew: "47060",
         passengers: "0",
         cargo_capacity: "36000000",
-        featured: false
+        featured: true
     },
     images: [
         {
             image: {
-                'url': './images/ships/star-destroyer.jpg',
+                'url': ship1_1,
             }
         },
         {
             image: {
-                'url': 'ship1_2',
+                'url': ship1_2,
             }
         }
     ],
@@ -106,12 +106,12 @@ export default  [
     images: [
         {
             image: {
-                'url': 'ship2_1',
+                'url': ship2_1,
             }
         },
         {
             image: {
-                'url': 'ship2_2',
+                'url': '',
             }
         }
     ]

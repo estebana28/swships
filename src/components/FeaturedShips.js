@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import { ShipContext } from '../context';
 import Loading from './Loading';
+import Ship from './Ship';
+import Title from './Title';
 
 
 export default class FeaturedShips extends Component {
-    static contextType = ShipContext
+    static contextType = ShipContext;
     render() {
-        const {featuredShips : ships} = this.context;
-        console.log(ships);
-        
-        return (
-            <div>
-                Hello from features ships
+        let { loading, featuredShips: ships} = this.context;
 
-                <Loading />
-            </div>
+        ships = ships.map(ship => {
+            return <Ship key={ship.id} ship={ship} />;
+        });
+
+
+        return (
+            <section className="featured-ships">
+                <Title title="featured ships" />
+                <div className="featured-ships-center">
+                    {loading?<Loading/>:ships}
+                </div>
+            </section>
         );
     }
 }
