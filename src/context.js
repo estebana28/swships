@@ -35,11 +35,18 @@ formatData(items) {
         return ship;
     });
     return tempItems;
+}
+
+
+getShip = (slug) => {
+    let tempShips = [...this.state.ships];
+    const ship = tempShips.find((ship) => ship.slug === slug);
+    return ship;
 };
 
 
     render() {
-        return <ShipContext.Provider value={{ ...this.state }}>
+        return <ShipContext.Provider value={{ ...this.state, getShip: this.getShip }}>
         {this.props.children}
         </ShipContext.Provider>;
     }
