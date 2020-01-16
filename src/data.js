@@ -63,6 +63,9 @@ export default  [
         id: '1',
     },
     descrip: {
+        description: `A Star Destroyer was a dagger-shaped type of capital ship that were used by the Galactic Republic, the Galactic Empire, and the First Order.
+        Notable examples of Star Destroyers include the Imperial-class Star Destroyer and its predecessor the Venator-class Star Destroyer.
+        According to Everi Chalis, Star Destroyers were the most resource-intensive ships the galaxy had ever seen, and only Kuat possessed shipyards capable of supporting and maintaining more than a handful at a time.`,
         name: "Star Destroyer",
         model: "Imperial I-class Star Destroyer",
         manufacturer: "Kuat Drive Yards",
@@ -92,7 +95,9 @@ export default  [
     core: {
         id: '2',
     },
-    descrip: {    name: "Trade Federation cruiser",
+    descrip: {    
+        description: "",
+        name: "Trade Federation cruiser",
         model: "Providence-class carrier/destroyer",
         manufacturer: "Rendili StarDrive, Free Dac Volunteers Engineering corps.",
         cost_in_credits: "125000000",
