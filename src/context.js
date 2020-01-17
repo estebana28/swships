@@ -54,4 +54,14 @@ getShip = (slug) => {
 
 const ShipConsumer = ShipContext.Consumer;
 
+export function withShipConsumer(Component){
+    return function ConsumerWrapper(props){
+        return (
+            <ShipConsumer>
+                {value => <Component {...props} context={value}/>}
+            </ShipConsumer>
+        )
+    }
+}
+
 export{ShipProvider, ShipConsumer, ShipContext };

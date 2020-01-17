@@ -69,7 +69,7 @@ export default class SingleShip extends Component {
                             }
                         
                         </h6>
-                        <h6>cargo capacity : {cargo_capacity} tn.</h6>
+                        <h6>cargo capacity : {cargo_capacity} units</h6>
                     </article>
                 </div>
             </section>

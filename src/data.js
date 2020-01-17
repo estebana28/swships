@@ -1,7 +1,7 @@
 import ship1_1 from "./images/ships/star-destroyer.jpg";
 import ship1_2 from "./images/ships/star-destroyer-2.jpg";
 import ship2_1 from "./images/ships/trade-federation-cruiser.jpg";
-import ship4_1 from "./images/ships/t-70.jpg";
+//import ship4_1 from "./images/ships/t-70.jpg";
 // import ship4_2 from "./images/ships/t-70-2.jpg";
 // import ship5_1 from "./images/ships/rebel-transport.jpg";
 // import ship5_2 from "./images/ships/rebel-transport-2.jpg";
