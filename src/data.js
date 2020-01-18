@@ -75,7 +75,9 @@ export default  [
         crew: "47060",
         passengers: "0",
         cargo_capacity: "36000000",
-        featured: true
+        featured: true,
+        type: "fighter",
+        weapons: true,
     },
     images: [
         {
@@ -107,6 +109,7 @@ export default  [
         passengers: "48247",
         cargo_capacity: "50000000",
         featured: true,
+        type: "fighter"
     },
     images: [
         {
