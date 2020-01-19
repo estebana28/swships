@@ -75,8 +75,8 @@ export default  [
         crew: "47060",
         passengers: "0",
         cargo_capacity: "36000000",
-        featured: true,
-        type: "fighter",
+        featured: false,
+        type: "destroyer",
         weapons: true,
     },
     images: [
@@ -108,8 +108,8 @@ export default  [
         crew: "600",
         passengers: "48247",
         cargo_capacity: "50000000",
-        featured: true,
-        type: "fighter",
+        featured: false,
+        type: "carrier",
         weapons: false,
     },
     images: [
@@ -120,14 +120,19 @@ export default  [
         },
         {
             image: {
-                'url': '',
+                'url': ,
             }
         }
     ]
-}
+},
 {
-    id: '3',
-    descrip: {    
+    core: {
+        id: '3',
+    },
+    descrip: {
+        description: "The T-70 X-wing starfighter, also known as the T-70 X-wing fighter, was the successor to the T-65B X-wing starfighter, manufactured by Incom-FreiTek for use by the New Republic Defense Fleet.
+            Faster and more expensive and complex than the former T-65B, the T-70 featured advanced weaponry and proved more versatile than its predecessor, and was essential in both dogfights and capital-ship scale combat operations. Appropriated S-foils designs allowed a greater range of fire, while four KX12 laser cannons offered single, dual, and quad firing modes. A built in dual proton torpedo launcher with quick-change magazines permitted the utilization of alternative armaments. New Republic demilitarization efforts and corruption would ultimately see production of the vessel shifted to several well-connected manufacturers. The T-70 would be eventually replaced by the newer T-85 X-wing.
+            Following its retirement from service in the New Republic Starfleet, the T-70 became the frontline starfighter of the Resistance in its fight against the First Order approximately thirty years after the Battle of Endor.",
         name: "T-70 X-wing fighter",
         model: "T-70 X-wing fighter",
         manufacturer: "Incom",
@@ -135,17 +140,32 @@ export default  [
         length: "unknown",
         max_atmosphering_speed: "unknown",
         crew: "1",
-        passengers: "unknown",
-        cargo_capacity: "unknown",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        passengers: "0",
+        cargo_capacity: "0",
+        featured: false,
+        type: "fighter",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship4_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship4_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '4',
-    descrip: {    
+    core: {
+        id: '4',
+    },
+    descrip: {
+        description: "The GR-75 medium transport, sometimes referred to as the Gallofree transport, was a transport designed and constructed by Gallofree Yards, Inc.. They were lightly armed with a clamshell-like hull to protect the cargo pods it carried. They could not reach anymore than 650 kilometers per hour and had a class 4 hyperdrive.
+            They were used by the Rebel Alliance before and during the Galactic Civil War. In the early days of the rebellion, one was destroyed on a supply mission to Teralov and two more were destroyed in the Battle of Atollon. At least ten transports served at the Battle of Scarif, and later in the war thirty served as escape craft during a partially successful attempt to evacuate rebel forces from an assault on Hoth, in which thirteen were able to escape. At least sixteen also participated in the decisive Battle of Endor, where three were engulfed in the explosions of the Liberty and Nautilian. Many GR-75 transports served in the Battle of Jakku, and by the time of the cold war, several GR-75 medium transports were in the service of Jinata Security, which were modified with additional laser cannons.",
         name: "Rebel transport",
         model: "GR-75 medium transport",
         manufacturer: "Gallofree Yards, Inc.",
@@ -155,15 +175,29 @@ export default  [
         crew: "6",
         passengers: "90",
         cargo_capacity: "19000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "transport",
+        weapons: false,
+        images: [
+            {
+                image: {
+                    'url': ship5_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship5_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '5',
+    core: {
+        id: '5',
+    },
     descrip: {   
+        description: "The Lucrehulk-class Droid Control Ship was one of the many warships used by the Trade Federation and the Separatist Navy, and arguably the most important weapon in their arsenals. Droid Control Ships were used to coordinate battle droid armies.", 
         name: "Droid control ship",
         model: "Lucrehulk-class Droid Control Ship",
         manufacturer: "Hoersch-Kessel Drive, Inc.",
@@ -173,15 +207,29 @@ export default  [
         crew: "175",
         passengers: "139000",
         cargo_capacity: "4000000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "command",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship6_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship6_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '6',
-    descrip: {    
+    core: {
+        id: '6',
+    },
+    descrip: {
+        description: "Acclamator-class transgalactic military assault ships, or Acclamator-class assault ships, more commonly called Republic assault ships, were military warships utilized by the Galactic Republic for ferrying clone troopers across the galaxy. They were first deployed at the Battle of Geonosis after transporting the clone army from Kamino, and subsequently carried the Grand Army of the Republic from Coruscant to the various arenas of the Clone Wars, a conflict in which they would see extensive use.[1] Unlike many ships of its size, the Acclamator-class could land on the surface of planets to deploy its forces.",
         name: "Republic Assault ship",
         model: "Acclamator I-class assault ship",
         manufacturer: "Rothana Heavy Engineering",
@@ -191,15 +239,29 @@ export default  [
         crew: "700",
         passengers: "16000",
         cargo_capacity: "11250000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "fighter",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship7_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship7_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '7',
-    descrip: {    
+    core: {
+        id: '7',
+    },
+    descrip: {
+        description: "The Venator-class Star Destroyer, also known as a Republic attack cruiser or Jedi Cruiser, was the wedge-shaped Capital ship utilised by the Galactic Republic during the Clone Wars. The Backbone of the Republic Navy, the Venator was a versatile capital ship able to fill the roles of both a warship, capable of ship to ship combat, as well as the role of a carrier with its impressive starfighter complement against the forces of the Confederacy of Independent Systems, in some of the most well-known battles of the Clone Wars, including those of Sullust, Christophsis and Coruscant.",
         name: "Republic attack cruiser",
         model: "Senator-class Star Destroyer",
         manufacturer: "Kuat Drive Yards, Allanteen Six shipyards",
@@ -209,15 +271,29 @@ export default  [
         crew: "7400",
         passengers: "2000",
         cargo_capacity: "20000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "cruiser",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship9_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship9_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '8',
-    descrip: {    
+    core: {
+        id: '8',
+    },
+    descrip: {
+        description: "The Executor-class Star Dreadnought, colloquially known as the Executor-class Super Star Destroyer, Executor-class Star Destroyer or simply Super Star Destroyer, was a heavy warship class in the Star Dreadnought league, often used as command ships and flagships in the Imperial Navy. At their prime, they were among the largest vessels in the galaxy, and were almost invincible in combat, although they were costly to operate.",
         name: "Executor",
         model: "Executor-class star dreadnought",
         manufacturer: "Kuat Drive Yards, Fondor Shipyards",
@@ -227,33 +303,61 @@ export default  [
         crew: "279144",
         passengers: "38000",
         cargo_capacity: "250000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "battleship",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship10_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship10_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '9',
-    descrip: {    
+    core: {
+        id: '9',
+    },
+    descrip: {
+        description: "The Death Star is a fictional mobile space station and galactic superweapon featured in the Star Wars space-opera franchise. The first Death Star, introduced in the original Star Wars film,[a] is stated to be more than 120 kilometers (75 mi) in diameter, and is crewed by an estimated 1.7 million military personnel and 400,000 droids. The second Death Star, which appears in Return of the Jedi, is significantly larger at between 160 kilometres (99 mi) to 900 kilometres (560 mi) in diameter, and technologically more powerful than its predecessor. Both versions of these moon-sized fortresses are designed for massive power-projection capabilities, each capable of destroying an entire planet with a 6.2x1032 J/s power output blast from its superlasers.",
         name: "Death Star",
         model: "DS-1 Orbital Battle Station",
         manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems",
         cost_in_credits: "1000000000000",
         length: "120000",
-        max_atmosphering_speed: "n/a",
+        max_atmosphering_speed: "300000",
         crew: "342953",
         passengers: "843342",
         cargo_capacity: "1000000000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: true,
+        type: "battleship",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship12_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship12_2,
+                }
+            }
+        ]
     }
 },
 {
-    id: '10',
+    core: {
+        id: '10',
+    },
     descrip: {
+        description: "The Millennium Falcon, original designation YT 492727ZED, was a Corellian YT-1300f light freighter most famously used by the smugglers Han Solo and Chewbacca during the Galactic Civil War. In the time following the Battle of Endor, Imperial turncoat Ralsius Paldora noted that 2.2 out of every 300 stormtroopers were aware of the Falcon's existence. Its aged appearance belied numerous advanced modifications to boost the ship´s speed, weapons, and shield, including a hyperdrive engine among the fastest in the entire galaxy, enabling it to outrun Imperial Star Destroyers. It included sensor-proof smuggling compartments, which were used during the rescue of Princess Leia Organa in 0 BBY to evade Imperial stormtroopers. Afterwards, the Millennium Falcon saw further action when Solo chose to join the Rebels during the Battle of Yavin, where it was able to sneak up and fire on Darth Vader´s TIE Advanced, allowing Luke Skywalker to fire the proton torpedo that destroyed the Death Star.",
         name: "Millennium Falcon",
         model: "YT-1300 light freighter",
         manufacturer: "Corellian Engineering Corporation",
@@ -263,15 +367,29 @@ export default  [
         crew: "4",
         passengers: "6",
         cargo_capacity: "100000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: true,
+        type: "fighter",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship13_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship13_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '11',
+    core: {
+        id: '11',
+    },
     descrip: {
+        description: "The Y-wing scout bomber was a prototype starfighter that shared similarities with the BTL-A4 Y-wing assault starfighter/bomber used by the Alliance to Restore the Republic. The scout bomber was a small one pilot fighter that supported the presence of an astromech droid in a astromech socket. As the name suggests, the Y-wing was roughly oriented in the shape of a 'Y,' with a forward facing cockpit with two engines attached to the rear of it on either side. The starfighter boasted four laser cannons: two forward facing guns next to the cockpit, and a rear pair of guns attached to the astromech socket. The starfighter also featured a bomb bay so it could function as a bomber. Prior to or during the standard year 3 BBY the Jedi Knight Kanan Jarrus and the astromech droid C1-10P flew a scout bomber and discharged its weapons. This particular scout bomber had an off-white colored hull with yellow markings. The crest of Phoenix Cell, a facet of the rebellion, was painted on the rear of the cockpit.",
         name: "Y-wing",
         model: "BTL Y-wing",
         manufacturer: "Koensayr Manufacturing",
@@ -281,15 +399,29 @@ export default  [
         crew: "2",
         passengers: "0",
         cargo_capacity: "110",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "bomber",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship14_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship14_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '12',
+    core: {
+        id: '12',
+    },
     descrip: {
+        description: "The X-wing was a prominent series of multiple starfighters produced by Incom with a characteristic "X" shape of four wings, known as S-foils, extending out from the fuselage. These starfighters were found in the service of the Rebel Alliance, New Republic, and Galactic Alliance. The X-wing was originally developed for the Galactic Empire, but the entire Incom design team defected with the prototypes to the Rebel Alliance, ending the contract. However, at least one X-wing was stolen by a stormtrooper.",
         name: "X-wing",
         model: "T-65 X-wing",
         manufacturer: "Incom Corporation",
@@ -299,15 +431,29 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "110",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: true,
+        type: "fighter",
+        weapons: true,    
+        images: [
+            {
+                image: {
+                    'url': ship15_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship15_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '13',
+    core: {
+        id: '13',
+    },
     descrip: {
+        description: "The TIE Advanced x1, also known as "TIE/x1" or "TIE Interceptor prototype",[6] was an advanced prototype starfighter touted as a replacement for the standard TIE Fighter tested by Darth Vader and X1 at the battles of Yavin and Mustafar respectively. While it never made it into production, many of its best design features were later incorporated into the TIE/sa bomber and TIE/IN interceptor. Further development of the Advanced continued, eventually leading to the TIE Avenger and TIE Defender.",
         name: "TIE Advanced x1",
         model: "Twin Ion Engine Advanced x1",
         manufacturer: "Sienar Fleet Systems",
@@ -317,15 +463,29 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "150",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "fighter",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship16_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship16_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '14',
+    core: {
+        id: '14',
+    },
     descrip: {
+        description: "An Imperial shuttle was a tri-winged type of shuttle used by the Sith Empire. During the Sacking of Coruscant in the Great Galactic War, they were used as a means of transporting personnel and equipment to and from the occupied planet of Coruscant. The Sith Emperor had a personal shuttle that was kept in Kaas City for his private use. There also existed a smaller variant of the shuttle, which was used far more frequently.",
         name: "Imperial shuttle",
         model: "Lambda-class T-4a shuttle",
         manufacturer: "Sienar Fleet Systems",
@@ -335,15 +495,29 @@ export default  [
         crew: "6",
         passengers: "20",
         cargo_capacity: "80000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "transport",
+        weapons: false,
+        images: [
+            {
+                image: {
+                    'url': ship18_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship18_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '15',
+    core: {
+        id: '15',
+    },
     descrip: {
+        description: "The EF76 Nebulon-B escort frigate also known as Nebulon-B frigate was a frigate manufactured by Kuat Drive Yards. Despite being intended for Imperial Navy service, it gained more fame as a Rebel Cruiser used by the Alliance to Restore the Republic, and its successor, the New Republic, throughout the Galactic Civil War.",
         name: "EF76 Nebulon-B escort frigate",
         model: "EF76 Nebulon-B escort frigate",
         manufacturer: "Kuat Drive Yards",
@@ -353,14 +527,27 @@ export default  [
         crew: "854",
         passengers: "75",
         cargo_capacity: "6000000",
-        images: {
-            'image1': '',
-            'image2': ''
-        },
+        featured: false,
+        type: "carrier",
+        weapons: true,
+        images: [
+            {
+                image: {
+                    'url': ship19_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship19_2,
+                }
+            }
+        ]
     },
 },
 {
-    id: '16',
+    core: {
+        id: '16',
+    },
     descrip: {
         name: "arc-170",
         model: "Aggressive Reconnaissance-170 starfighte",
@@ -378,7 +565,9 @@ export default  [
     },
 },
 {
-    id: '17',
+    core: {
+        id: '17',
+    },
     descrip: {
         name: "V-wing",
         model: "Alpha-3 Nimbus-class V-wing starfighter",
@@ -396,7 +585,9 @@ export default  [
     },
 },
 {
-    id: '18',
+    core: {
+        id: '18',
+    },
     descrip: {
         name: "CR90 corvette",
         model: "CR90 corvette",
@@ -414,7 +605,9 @@ export default  [
     },
 },
 {
-    id: '19',
+    core: {
+        id: '19',
+    },
     descrip: {
         name: "Banking clan frigate",
         model: "Munificent-class star frigate",
@@ -432,7 +625,9 @@ export default  [
     },
 },
 {
-    id: '20',
+    core: {
+        id: '20',
+    },
     descrip: {
         name: "Calamari Cruiser",
         model: "MC80 Liberty type Star Cruiser",
@@ -450,7 +645,9 @@ export default  [
     },
 },
 {
-    id: '21',
+    core: {
+        id: '21',
+    },
     descrip: {
         name: "B-wing",
         model: "A/SF-01 B-wing starfighter",
@@ -468,7 +665,9 @@ export default  [
     },
 },
 {
-    id: '22',
+    core: {
+        id: '22',
+    },
     descrip: {
         name: "Naboo fighter",
         model: "N-1 starfighter",
@@ -486,7 +685,9 @@ export default  [
     },
 },
 {
-    id: '23',
+    core: {
+        id: '23',
+    },
     descrip: {
         name: "Scimitar",
         model: "Star Courier",
@@ -504,7 +705,9 @@ export default  [
     },
 },
 {
-    id: '24',
+    core: {
+        id: '24',
+    },
     descrip: {
         name: "J-type diplomatic barge",
         model: "J-type diplomatic barge",
@@ -522,7 +725,9 @@ export default  [
     },
 },
 {
-    id: '25',
+    core: {
+        id: '25',
+    },
     descrip: {
         name: "AA-9 Coruscant freighter",
         model: "Botajef AA-9 Freighter-Liner",
@@ -540,7 +745,9 @@ export default  [
     },
 },
 {
-    id: '26',
+    core: {
+        id: '26',
+    },
     descrip: {
         name: "Jedi starfighter",
         model: "Delta-7 Aethersprite-class interceptor",
