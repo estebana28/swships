@@ -1,11 +1,11 @@
 import ship1_1 from "./images/ships/star-destroyer.jpg";
 import ship1_2 from "./images/ships/star-destroyer-2.jpg";
 import ship2_1 from "./images/ships/trade-federation-cruiser.jpg";
-//import ship4_1 from "./images/ships/t-70.jpg";
-// import ship4_2 from "./images/ships/t-70-2.jpg";
-// import ship5_1 from "./images/ships/rebel-transport.jpg";
-// import ship5_2 from "./images/ships/rebel-transport-2.jpg";
-// import ship6_1 from "./images/ships/droid-control-ship.jpg";
+import ship4_1 from "./images/ships/t-70.jpg";
+import ship4_2 from "./images/ships/t-70-2.jpg";
+import ship5_1 from "./images/ships/rebel-transport.jpg";
+import ship5_2 from "./images/ships/rebel-transport-2.jpg";
+import ship6_1 from "./images/ships/droid-control-ship.jpg";
 // import ship6_2 from "./images/ships/droid-control-ship2.jpg";
 // import ship7_1 from "./images/ships/republic-assault-ship.jpg";
 // import ship7_2 from "./images/ships/republic-assault-ship-2.jpg";
@@ -98,7 +98,7 @@ export default  [
         id: '2',
     },
     descrip: {    
-        description: "",
+        description: "The Providence-class carrier/destroyer, additionally designated as the Dreadnaught-class command ship and also known as the Trade Federation cruiser, the Separatist Star Destroyer, or the Separatist dreadnought, was a series of capital ship models fielded by the Confederate Navy during the Clone Wars. It was originally produced and used by the Trade Federation, hence the nickname.",
         name: "Trade Federation cruiser",
         model: "Providence-class carrier/destroyer",
         manufacturer: "Rendili StarDrive, Free Dac Volunteers Engineering corps.",
