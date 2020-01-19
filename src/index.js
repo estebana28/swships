@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import WebFont from "webfontloader";
 import {ShipProvider} from "./context"; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 WebFont.load({
     google: {

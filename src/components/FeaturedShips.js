@@ -16,9 +16,9 @@ export default class FeaturedShips extends Component {
 
 
         return (
-            <section className="featured-ships">
+            <section className="featured-ships container">
                 <Title title="featured ships" />
-                <div className="featured-ships-center">
+                <div className="featured-ships-center row">
                     {loading?<Loading/>:ships}
                 </div>
             </section>

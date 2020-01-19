@@ -11,7 +11,7 @@ export const Home = () => {
         <>
             <Hero>
                 <Banner title="KickAss Ships" subtitle="The best ships of the galaxy!!">
-                <Link to="/ships" className="btn-primary">
+                <Link to="/ships" className="btn-primary banner-link">
                     find your ship
                 </Link>
                 </Banner>

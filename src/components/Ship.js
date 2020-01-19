@@ -9,7 +9,7 @@ export default function Ship({ ship }) {
 
 
     return (
-        <article className="ship">
+        <article className="ship col-md-3">
             <div className="img-container">
                 <img src={images[0] || defaultImg } alt="single ship" />
                 <div className="price-tag">
