@@ -1,12 +1,32 @@
 import React from 'react';
+import styled from 'styled-components'
+import tatoo from '../images/tatooine.jpg'
 
-export default function Banner({children,title,subtitle}) {
+
+const BannerWrapper = styled.div`
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        height: 50vh;
+        background-image: url(${tatoo});
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding-top: 4rem;
+        font-size: 3rem;
+        color: #fff;
+        p {
+            font-size: 2rem;
+        }
+    }
+`
+
+const Banner = ({children,title,subtitle}) => {
     return (
-        <div className="banner align-items-center d-block">
+        <BannerWrapper>
             <h1>{title}</h1>
-            <div></div>
-            <p>{subtitle}</p>
-            {children}
-        </div>
-    );
+                <p>{subtitle}</p>
+                <div>{children}</div>   
+        </BannerWrapper>
+    )
 }
+
+export default Banner
