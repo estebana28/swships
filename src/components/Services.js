@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
 import Title from './Title';
+import styled from 'styled-components'
 import Empire from '../images/icons/Empire.png';
 import Fighter from '../images/icons/Fighter.png';
 import Mapis from '../images/icons/Map.png';
 import Rebel from '../images/icons/Rebel.png';
+
+const ServicesWrapper = styled.section`
+    text-align: center;
+
+    div {
+        display: flex;    
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    article {
+        width: 40vw;
+    }
+    
+`
 
 
 
@@ -34,18 +51,18 @@ export default class Services extends Component {
     }
     render() {
         return (
-            <section className="sect-services container">
+            <ServicesWrapper>
                 <Title title='services' />
-                <div className="sect-services-center row">
+                <div>
                 {this.state.services.map((item,index) => {
-                    return <article key={index} className="service col-md-3 ">
+                    return <article key={index}>
                                 <img src={item.img} alt='' />
                                 <h6>{item.title}</h6>
                                 <p>{item.info}</p>
                             </article>
                 })}
                 </div>  
-            </section>
+            </ServicesWrapper>
         )
     }
 }

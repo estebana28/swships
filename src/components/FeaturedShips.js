@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import { ShipContext } from '../context';
+import styled from 'styled-components'
 import Loading from './Loading';
 import Ship from './Ship';
 import Title from './Title';
 
+
+const FeaturedWrapper = styled.section`
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+`
 
 export default class FeaturedShips extends Component {
     static contextType = ShipContext;
@@ -16,12 +27,12 @@ export default class FeaturedShips extends Component {
 
 
         return (
-            <section className="featured-ships container">
+            <FeaturedWrapper>
                 <Title title="featured ships" />
-                <div className="featured-ships-center row">
+                <div>
                     {loading?<Loading/>:ships}
                 </div>
-            </section>
+            </FeaturedWrapper>
         );
     }
 }
