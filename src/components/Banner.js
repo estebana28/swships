@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 import tatoo from '../images/tatooine.jpg'
+import { device } from '../components/device'
 
 
 const BannerWrapper = styled.div`
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         height: 50vh;
         background-image: url(${tatoo});
         background-size: cover;
@@ -16,7 +16,9 @@ const BannerWrapper = styled.div`
         p {
             font-size: 2rem;
         }
-    }
+        @media ${device.laptop} {
+            
+        }
 `
 
 const Banner = ({children,title,subtitle}) => {

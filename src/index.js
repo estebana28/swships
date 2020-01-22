@@ -7,6 +7,7 @@ import WebFont from "webfontloader";
 import {ShipProvider} from "./context"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 WebFont.load({
     google: {
         families: ['Press Start 2P', 'cursive']
