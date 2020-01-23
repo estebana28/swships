@@ -1,7 +1,34 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
 import logo from "../images/logo.jpg"
 import {FaAlignRight} from "react-icons/fa";
 import {Link} from "react-router-dom";
+
+const NavbarWrapper = styled.nav`
+    background-color: #000;
+    height: 20vh;
+    display: flex;
+    img {
+        height: 10vh;
+        margin: 5vh 5vw;
+    }
+
+    ul {
+        display: inline-flex;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    a {
+        color: white;
+    }
+
+`
+
+
 
 export default class Navbar extends Component {
     state = {
@@ -12,24 +39,24 @@ export default class Navbar extends Component {
     };
     render() {
         return (
-            <nav className="navbar">
-                <div className="container">
+            <NavbarWrapper>
+                <div>
                     <Link to="/">
-                        <img className="navbar-logo" src={logo} alt="Star wars logo"></img>
+                        <img src={logo} alt="Star wars logo"></img>
                     </Link>
-                    <button type="button" className="nav-btn" onClick={this.handleToggle}>
-                        <FaAlignRight className="nav-icon" />
+                    <button type="button" onClick={this.handleToggle}>
+                        <FaAlignRight />
                     </button>
                 </div>
-                <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/">Home</Link>
+                <ul className={this.state.isOpen ? "NavbarWrapper-links show-nav" : "nav-links"}>
+                    <li>
+                        <Link to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/ships">Ships</Link>
+                    <li>
+                        <Link to="/ships">Ships</Link>
                     </li>
                 </ul>
-            </nav>
+            </NavbarWrapper>
         )
     }
 }

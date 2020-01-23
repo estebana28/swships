@@ -9,6 +9,10 @@ import Rebel from '../images/icons/Rebel.png';
 const ServicesWrapper = styled.section`
     text-align: center;
 
+    h4 {
+        font-size: 5rem;
+        margin: 3rem;
+    }
     div {
         display: flex;    
         flex-direction: row;
@@ -18,6 +22,7 @@ const ServicesWrapper = styled.section`
     }
     article {
         width: 40vw;
+        margin: 2rem
     }
     
 `
@@ -40,7 +45,7 @@ export default class Services extends Component {
             {
                 img: Mapis,
                 title: "Delivery GalaxyWide",
-                info: "We deliver your purchased ship anyware in the whole universe"
+                info: "We deliver your purchased ship anywere in the whole universe"
             },
             {
                 img: Rebel,
@@ -52,7 +57,7 @@ export default class Services extends Component {
     render() {
         return (
             <ServicesWrapper>
-                <Title title='services' />
+                <Title className="title" title='Services' />
                 <div>
                 {this.state.services.map((item,index) => {
                     return <article key={index}>

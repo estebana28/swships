@@ -560,7 +560,18 @@ export default  [
         passengers: "0",
         cargo_capacity: "110",
     },
-    images: []
+    images: [
+        {
+            image: {
+                'url': ship22_1,
+            }
+        },
+        {
+            image: {
+                'url': ship22_2,
+            }
+        }
+    ]
 },
 {
     core: {
@@ -577,7 +588,18 @@ export default  [
         passengers: "0",
         cargo_capacity: "60",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship24_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship24_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -594,7 +616,18 @@ export default  [
         passengers: "600",
         cargo_capacity: "3000000",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship25_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship25_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -611,7 +644,18 @@ export default  [
         passengers: "unknown",
         cargo_capacity: "40000000",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship26_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship26_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -628,7 +672,18 @@ export default  [
         passengers: "1200",
         cargo_capacity: "unknown",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship27_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship27_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -645,7 +700,18 @@ export default  [
         passengers: "0",
         cargo_capacity: "45",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship29_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship29_2,
+                }
+            }
+        ]
     
 },
 {
@@ -663,7 +729,18 @@ export default  [
         passengers: "0",
         cargo_capacity: "65",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship31_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship31_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -680,7 +757,18 @@ export default  [
         passengers: "6",
         cargo_capacity: "2500000",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship33_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship33_2,
+                }
+            }
+        ]
     
 },
 {
@@ -698,7 +786,18 @@ export default  [
         passengers: "10",
         cargo_capacity: "unknown",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship34_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship34_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -715,7 +814,18 @@ export default  [
         passengers: "30000",
         cargo_capacity: "unknown",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship35_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship35_2,
+                }
+            }
+        ]
 },
 {
     core: {
@@ -732,7 +842,18 @@ export default  [
         passengers: "0",
         cargo_capacity: "60",
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship36_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship36_2,
+                }
+            }
+        ]
     
 }
 ];

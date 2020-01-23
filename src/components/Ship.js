@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import defaultImg from '../images/ships/default.jpg';
 import PropTypes from 'prop-types';
+
+import defaultImg from '../images/ships/default.jpg';
+
 
 
 const ShipWrapper = styled.article`
@@ -11,30 +13,34 @@ const ShipWrapper = styled.article`
     .ship-wrapper {
         height: 50vh;
     }
+    
     img {
-        width: 80vw;
+        
         position: relative;
-
+        width: 80vw;
+        height: 60vh;
+        border-radius: 50% / 10%;
     }
-    .ship-info {
-        background-color: teal;
+    img:before {
         position: absolute;
-        border-bottom-right-radius: 10px;
-        padding: 15px 10px 5px 10px;
-        color: white;
-        font-weight: 900;
-        opacity: 0.7;
+        border-radius: 5% / 50%;
+    
+
     }
 
     .ship-name {
+        margin: 0.5rem;
+        width: 80vw;
+        text-align: center;
         position: absolute;
-        left: 50;
+        
         color: white;
-    }
+        font-size: 1.5rem;
+        font-weight: 800;
 
+    }
     
 `
-
 
 export default function Ship({ ship }) {
     const { name ,slug, images, cost_in_credits} = ship;
@@ -50,7 +56,9 @@ export default function Ship({ ship }) {
                 </div>
                 <Link to={`/ships/${slug}`}>Details</Link>
             </div>
-            <p className="ship-name">{name}</p>
+            <div className="ship-name">
+                <p>{name}</p>
+            </div>
 
         </ShipWrapper> 
     )

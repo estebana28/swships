@@ -10,6 +10,11 @@ const FeaturedWrapper = styled.section`
     width: 80vw;
     text-align: center;
     margin: auto;
+
+    h4 {
+        margin: 3rem;
+        font-size: 3rem;
+    }
     div {
         display: flex;
         flex-direction: column;
