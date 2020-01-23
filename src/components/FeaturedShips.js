@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import { ShipContext } from '../context';
-import styled from 'styled-components'
-import Loading from './Loading';
-import Ship from './Ship';
-import Title from './Title';
-
-
+import React, { Component } from "react";
+import { ShipContext } from "../context";
+import styled from "styled-components";
+import Loading from "./Loading";
+import Ship from "./Ship";
+import Title from "./Title";
 
 const FeaturedWrapper = styled.section`
     width: 80vw;
@@ -20,24 +18,21 @@ const FeaturedWrapper = styled.section`
         display: flex;
         flex-direction: column;
     }
-`
+`;
 
 export default class FeaturedShips extends Component {
     static contextType = ShipContext;
     render() {
-        let { loading, featuredShips: ships} = this.context;
+        let { loading, featuredShips: ships } = this.context;
 
         ships = ships.map(ship => {
             return <Ship key={ship.id} ship={ship} />;
         });
 
-
         return (
             <FeaturedWrapper>
                 <Title title="featured ships" />
-                <div>
-                    {loading?<Loading/>:ships}
-                </div>
+                <div>{loading ? <Loading /> : ships}</div>
             </FeaturedWrapper>
         );
     }
