@@ -10,9 +10,25 @@ import defaultImg from '../images/ships/default.jpg';
 const ShipWrapper = styled.article`
     display: flex;
     flex-direction: column;
+    
+
     .ship-wrapper {
         height: 50vh;
+        .details {
+            display: none;
+            text-decoration: none;
+            color: #D4AF37;
+            &:hover {
+                display: inline;
+                position: absolute;
+                text-align: center;
+            }
+        }
+        &:hover{
+            opacity: 0.5;
+        }
     }
+    
     
     img {
         
@@ -20,11 +36,24 @@ const ShipWrapper = styled.article`
         width: 80vw;
         height: 60vh;
         border-radius: 50% / 10%;
+        
     }
-    img:before {
-        position: absolute;
-        border-radius: 5% / 50%;
     
+
+    .ship-info {
+        position: absolute;
+        width: 150px;
+        border: 3px solid #fff;
+        border-radius: 0px 40px 0px 40px;
+        background-color: #fff;
+        color: #000;
+        padding-top: 15px;
+        margin: -10px 0 0 -50px;
+        z-index: 1;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, -10px -1px 15px 4px rgba(0,0,0,0.19); 
+        box-shadow: 0px 10px 13px -7px #000000, -10px -1px 15px 4px rgba(0,0,0,0.19);
+        font-family: 'Press Start 2P';
+        font-size: 0.8rem;
 
     }
 
@@ -50,12 +79,13 @@ export default function Ship({ ship }) {
         <ShipWrapper>
             <div className="ship-wrapper">
                 <img src={images[0] || defaultImg } alt="single ship" />
-                <div className="ship-info">
-                    <h6>${cost_in_credits}</h6>
-                    <p>brand new</p>
-                </div>
-                <Link to={`/ships/${slug}`}>Details</Link>
+                <Link className="details" to={`/ships/${slug}`}>Details</Link>
             </div>
+            <div className="ship-info">
+                <h6>${cost_in_credits}</h6>
+                <p>brand new</p>
+            </div>
+            
             <div className="ship-name">
                 <p>{name}</p>
             </div>

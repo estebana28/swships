@@ -330,7 +330,7 @@ export default  [
         name: "Death Star",
         model: "DS-1 Orbital Battle Station",
         manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems",
-        cost_in_credits: "1000000000000",
+        cost_in_credits: " ***",
         length: "120000",
         max_atmosphering_speed: "300000",
         crew: "342953",

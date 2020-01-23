@@ -6,6 +6,7 @@ import Ship from './Ship';
 import Title from './Title';
 
 
+
 const FeaturedWrapper = styled.section`
     width: 80vw;
     text-align: center;
