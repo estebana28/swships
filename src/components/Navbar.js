@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components'
-import logo from "../images/logo.jpg"
-import {FaAlignRight} from "react-icons/fa";
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import styled from "styled-components";
+import logo from "../images/logo.jpg";
+import { FaAlignRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavbarWrapper = styled.nav`
     background-color: #000;
@@ -13,8 +13,12 @@ const NavbarWrapper = styled.nav`
         margin: 5vh 5vw;
     }
 
+    button {
+        align-items: flex-end;
+        right: 0;
+    }
     ul {
-        display: inline-flex;
+        display: none;
     }
 
     li {
@@ -25,17 +29,14 @@ const NavbarWrapper = styled.nav`
     a {
         color: white;
     }
-
-`
-
-
+`;
 
 export default class Navbar extends Component {
     state = {
-        isOpen:false
+        isOpen: false
     };
     handleToggle = () => {
-        this.setState({ isOpen: !this.state.isOpen })
+        this.setState({ isOpen: !this.state.isOpen });
     };
     render() {
         return (
@@ -48,7 +49,13 @@ export default class Navbar extends Component {
                         <FaAlignRight />
                     </button>
                 </div>
-                <ul className={this.state.isOpen ? "NavbarWrapper-links show-nav" : "nav-links"}>
+                <ul
+                    className={
+                        this.state.isOpen
+                            ? "NavbarWrapper-links show-nav"
+                            : "nav-links"
+                    }
+                >
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -57,6 +64,6 @@ export default class Navbar extends Component {
                     </li>
                 </ul>
             </NavbarWrapper>
-        )
+        );
     }
 }

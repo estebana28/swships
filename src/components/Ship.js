@@ -7,29 +7,52 @@ import defaultImg from "../images/ships/default.jpg";
 const ShipWrapper = styled.article`
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    box-sizing: border-box;
+
+    $:hover {
+        transition: all 0.3s linear;
+    }
 
     .ship-wrapper {
         height: 50vh;
-        .details {
-            display: none;
-            text-decoration: none;
-            color: #d4af37;
-            &:hover {
-                display: inline;
-                position: absolute;
-                text-align: center;
-            }
-        }
-        &:hover {
-            opacity: 0.5;
+        width: 80vw;
+        position: relative;
+        $:hover {
+            background: rgba(0, 0, 0, 0.8);
         }
     }
 
+    .ship-wrapper .details {
+        $:hover {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    .details {
+        border: 4px solid #d4af37;
+        top: 50%;
+        left: 50%;
+        width: 40vw;
+        font-size: 3rem;
+        position: absolute;
+        transform: scale(0);
+        transition: all 0.3s linear;
+        display: inline-block;
+    }
+
     img {
-        position: relative;
-        width: 80vw;
-        height: 60vh;
-        border-radius: 50% / 10%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000,
+            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 10px 13px -7px #000000,
+            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
+        &:hover {
+            opacity: 0.3;
+        }
     }
 
     .ship-info {
@@ -57,7 +80,7 @@ const ShipWrapper = styled.article`
         position: absolute;
 
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 800;
     }
 `;
@@ -69,15 +92,14 @@ export default function Ship({ ship }) {
         <ShipWrapper>
             <div className="ship-wrapper">
                 <img src={images[0] || defaultImg} alt="single ship" />
-                <Link className="details" to={`/ships/${slug}`}>
-                    Details
-                </Link>
+                <div className="ship-info">
+                    <h6>${cost_in_credits}</h6>
+                    <p>brand new</p>
+                </div>
             </div>
-            <div className="ship-info">
-                <h6>${cost_in_credits}</h6>
-                <p>brand new</p>
-            </div>
-
+            <Link className="details" to={`/ships/${slug}`}>
+                details
+            </Link>
             <div className="ship-name">
                 <p>{name}</p>
             </div>
