@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/swships/static/css/main.348d3795.chunk.css",
-    "main.js": "/swships/static/js/main.1a7ba231.chunk.js",
-    "main.js.map": "/swships/static/js/main.1a7ba231.chunk.js.map",
+    "main.css": "/swships/static/css/main.9def0bfe.chunk.css",
+    "main.js": "/swships/static/js/main.313161f4.chunk.js",
+    "main.js.map": "/swships/static/js/main.313161f4.chunk.js.map",
     "runtime-main.js": "/swships/static/js/runtime-main.70c4d332.js",
     "runtime-main.js.map": "/swships/static/js/runtime-main.70c4d332.js.map",
     "static/css/2.47e06e2e.chunk.css": "/swships/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.8ab43941.chunk.js": "/swships/static/js/2.8ab43941.chunk.js",
-    "static/js/2.8ab43941.chunk.js.map": "/swships/static/js/2.8ab43941.chunk.js.map",
+    "static/js/2.2161954b.chunk.js": "/swships/static/js/2.2161954b.chunk.js",
+    "static/js/2.2161954b.chunk.js.map": "/swships/static/js/2.2161954b.chunk.js.map",
     "index.html": "/swships/index.html",
-    "precache-manifest.d7aeef84117873eaefc7aa44e7637e7f.js": "/swships/precache-manifest.d7aeef84117873eaefc7aa44e7637e7f.js",
+    "precache-manifest.ae4bce82fbd46249f41b50d540abb52d.js": "/swships/precache-manifest.ae4bce82fbd46249f41b50d540abb52d.js",
     "service-worker.js": "/swships/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/swships/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.348d3795.chunk.css.map": "/swships/static/css/main.348d3795.chunk.css.map",
-    "static/js/2.8ab43941.chunk.js.LICENSE": "/swships/static/js/2.8ab43941.chunk.js.LICENSE",
+    "static/css/main.9def0bfe.chunk.css.map": "/swships/static/css/main.9def0bfe.chunk.css.map",
+    "static/js/2.2161954b.chunk.js.LICENSE": "/swships/static/js/2.2161954b.chunk.js.LICENSE",
     "static/media/Empire.png": "/swships/static/media/Empire.9dfcfcae.png",
     "static/media/aa9-coruscant-freighter-2.jpg": "/swships/static/media/aa9-coruscant-freighter-2.211f9386.jpg",
     "static/media/aa9-coruscant-freighter.jpg": "/swships/static/media/aa9-coruscant-freighter.26e5c981.jpg",
@@ -61,7 +61,7 @@
     "static/media/star-destroyer.jpg": "/swships/static/media/star-destroyer.e8ef6caa.jpg",
     "static/media/t-70-2.jpg": "/swships/static/media/t-70-2.87e0f673.jpg",
     "static/media/t-70.jpg": "/swships/static/media/t-70.53bffda0.jpg",
-    "static/media/index.scss": "/swships/static/media/tatooine.76b44a87.jpg",
+    "static/media/tatooine.jpg": "/swships/static/media/tatooine.76b44a87.jpg",
     "static/media/tie-2.jpg": "/swships/static/media/tie-2.0fdba740.jpg",
     "static/media/tie.jpg": "/swships/static/media/tie.cb00b2b5.jpg",
     "static/media/trade-federation-cruiser.jpg": "/swships/static/media/trade-federation-cruiser.aa96fb6c.jpg",
@@ -75,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.70c4d332.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.8ab43941.chunk.js",
-    "static/css/main.348d3795.chunk.css",
-    "static/js/main.1a7ba231.chunk.js"
+    "static/js/2.2161954b.chunk.js",
+    "static/css/main.9def0bfe.chunk.css",
+    "static/js/main.313161f4.chunk.js"
   ]
 }
