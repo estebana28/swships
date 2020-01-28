@@ -10,21 +10,21 @@ const ShipWrapper = styled.article`
     margin: 20px;
     box-sizing: border-box;
 
-    $:hover {
+    &:hover {
         transition: all 0.3s linear;
     }
 
     .ship-wrapper {
-        height: 50vh;
+        height: 40vh;
         width: 80vw;
         position: relative;
-        $:hover {
+        &:hover {
             background: rgba(0, 0, 0, 0.8);
         }
     }
 
     .ship-wrapper .details {
-        $:hover {
+        &:hover {
             transform: translate(-50%, -50%) scale(1);
         }
     }
@@ -47,9 +47,9 @@ const ShipWrapper = styled.article`
         height: 100%;
         border-radius: 5px;
         -webkit-box-shadow: 0px 10px 13px -7px #000000,
-            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
+            10px 1px 15px -5px rgba(0, 0, 0, 0.19);
         box-shadow: 0px 10px 13px -7px #000000,
-            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
+            10px 1px 15px -5px rgba(0, 0, 0, 0.19);
         &:hover {
             opacity: 0.3;
         }
@@ -65,10 +65,10 @@ const ShipWrapper = styled.article`
         padding-top: 15px;
         margin: -10px 0 0 -50px;
         z-index: 1;
-        -webkit-box-shadow: 0px 10px 13px -7px #000000,
-            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
-        box-shadow: 0px 10px 13px -7px #000000,
-            -10px -1px 15px 4px rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0px 2px 13px -7px #000000,
+            10px 1px 15px 4px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 2px 13px -7px #000000,
+            10px 1px 15px 4px rgba(0, 0, 0, 0.19);
         font-family: "Press Start 2P";
         font-size: 0.8rem;
     }
