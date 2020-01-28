@@ -19,7 +19,7 @@ function App() {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/ships" component={Ships} />
-        <Route exact path="/ships/:theforce" component={SingleShip} />
+        <Route exact path="/ships/:slug" component={SingleShip} />
         <Route component={Error} />
 
       </Switch>

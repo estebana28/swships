@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import ShipsContainer from '../components/ShipsContainer';
 
 
-export const Ships = () => {
+const Ships = () => {
     return (
         <>
             <Hero ships="shipsHero">

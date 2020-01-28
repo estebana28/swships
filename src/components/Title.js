@@ -1,10 +1,17 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
-export default function Title({title}) {
+const TitleWrapper = styled.div`
+    margin-bottom: 25px;
+    h4 {
+        font-size: 4rem;
+    }
+`;
+
+export default function Title({ title }) {
     return (
-        <div className="section-title">
+        <TitleWrapper>
             <h4>{title}</h4>
-            <div></div>
-        </div>
-    )
+        </TitleWrapper>
+    );
 }

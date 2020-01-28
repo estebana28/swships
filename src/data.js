@@ -75,7 +75,7 @@ export default  [
         crew: "47060",
         passengers: "0",
         cargo_capacity: "36000000",
-        featured: false,
+        featured: true,
         type: "destroyer",
         weapons: true,
     },
@@ -134,9 +134,9 @@ export default  [
         name: "T-70 X-wing fighter",
         model: "T-70 X-wing fighter",
         manufacturer: "Incom",
-        cost_in_credits: "unknown",
-        length: "unknown",
-        max_atmosphering_speed: "unknown",
+        cost_in_credits: "324000",
+        length: "10.5",
+        max_atmosphering_speed: "1050",
         crew: "1",
         passengers: "0",
         cargo_capacity: "0",
@@ -167,7 +167,7 @@ export default  [
         name: "Rebel transport",
         model: "GR-75 medium transport",
         manufacturer: "Gallofree Yards, Inc.",
-        cost_in_credits: "unknown",
+        cost_in_credits: "350000",
         length: "90",
         max_atmosphering_speed: "650",
         crew: "6",
@@ -200,9 +200,9 @@ export default  [
         name: "Droid control ship",
         model: "Lucrehulk-class Droid Control Ship",
         manufacturer: "Hoersch-Kessel Drive, Inc.",
-        cost_in_credits: "unknown",
+        cost_in_credits: "500000000",
         length: "3170",
-        max_atmosphering_speed: "n/a",
+        max_atmosphering_speed: "500",
         crew: "175",
         passengers: "139000",
         cargo_capacity: "4000000000",
@@ -233,9 +233,9 @@ export default  [
         name: "Republic Assault ship",
         model: "Acclamator I-class assault ship",
         manufacturer: "Rothana Heavy Engineering",
-        cost_in_credits: "unknown",
+        cost_in_credits: "29000000",
         length: "752",
-        max_atmosphering_speed: "unknown",
+        max_atmosphering_speed: "1200",
         crew: "700",
         passengers: "16000",
         cargo_capacity: "11250000",
@@ -300,7 +300,7 @@ export default  [
         manufacturer: "Kuat Drive Yards, Fondor Shipyards",
         cost_in_credits: "1143350000",
         length: "19000",
-        max_atmosphering_speed: "n/a",
+        max_atmosphering_speed: "100",
         crew: "279144",
         passengers: "38000",
         cargo_capacity: "250000000",
@@ -330,13 +330,13 @@ export default  [
         name: "Death Star",
         model: "DS-1 Orbital Battle Station",
         manufacturer: "Imperial Department of Military Research, Sienar Fleet Systems",
-        cost_in_credits: "1000000000000",
+        cost_in_credits: "00",
         length: "120000",
         max_atmosphering_speed: "300000",
         crew: "342953",
         passengers: "843342",
         cargo_capacity: "1000000000000",
-        featured: true,
+        featured: false,
         type: "battleship",
         weapons: true,
     },
@@ -458,7 +458,7 @@ export default  [
         name: "TIE Advanced x1",
         model: "Twin Ion Engine Advanced x1",
         manufacturer: "Sienar Fleet Systems",
-        cost_in_credits: "unknown",
+        cost_in_credits: "160000",
         length: "9.2",
         max_atmosphering_speed: "1200",
         crew: "1",
@@ -550,6 +550,7 @@ export default  [
         id: '16',
     },
     descrip: {
+        description: 'The Aggressive ReConnaissance-170 starfighter, also known simply as the ARC-170 starfighter, was a heavy-duty model of starfighter used by the Galactic Republic during the Clone Wars and was considered the latest in fighter technology. Jointly manufactured by Incom Corporation and Subpro, it continued to see usage into the reign of the Galactic Empire, but was eventually phased out by the newer TIE line.',
         name: "arc-170",
         model: "Aggressive Reconnaissance-170 starfighte",
         manufacturer: "Incom Corporation, Subpro Corporation",
@@ -559,14 +560,29 @@ export default  [
         crew: "3",
         passengers: "0",
         cargo_capacity: "110",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+        {
+            image: {
+                'url': ship22_1,
+            }
+        },
+        {
+            image: {
+                'url': ship22_2,
+            }
+        }
+    ]
 },
 {
     core: {
         id: '17',
     },
     descrip: {
+        description: 'The Alpha-3 Nimbus-class V-wing starfighter, also known as the Alpha-3 Nimbus or V-wing starfighter, was a starfighter model manufactured by Kuat Systems Engineering.',
         name: "V-wing",
         model: "Alpha-3 Nimbus-class V-wing starfighter",
         manufacturer: "Kuat Systems Engineering",
@@ -576,14 +592,29 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "60",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship24_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship24_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '18',
     },
     descrip: {
+        description: 'CR90 corvettes, also known as Corellian corvettes or blockade runners, were consular vessels manufactured by the Corellian Engineering Corporation. While the CR90 would see initial use within the late Galactic Republic and Imperial Senate, many vessels would be appropriated by the early rebellion and Rebel Alliance against the First Galactic Empire, despite not being designed as a combat-oriented vessel. They were later used by the navies of both the New Republic and the Resistance.',
         name: "CR90 corvette",
         model: "CR90 corvette",
         manufacturer: "Corellian Engineering Corporation",
@@ -593,48 +624,93 @@ export default  [
         crew: "165",
         passengers: "600",
         cargo_capacity: "3000000",
+        featured: false,
+        type: 'command',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship25_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship25_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '19',
     },
     descrip: {
+        description: 'The Munificent-class star frigate, commonly referred to as the Banking Clan frigate or the Banking Clan comms ship, was a warship used by the InterGalactic Banking Clan and by extension the Confederacy of Independent Systems.',
         name: "Banking clan frigate",
         model: "Munificent-class star frigate",
         manufacturer: "Hoersch-Kessel Drive, Inc, Gwori Revolutionary Industries",
         cost_in_credits: "57000000",
         length: "825",
-        max_atmosphering_speed: "unknown",
+        max_atmosphering_speed: "950",
         crew: "200",
-        passengers: "unknown",
+        passengers: "150000",
         cargo_capacity: "40000000",
+        featured: false,
+        type: 'command',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship26_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship26_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '20',
     },
     descrip: {
+        description: 'Mon Calamari Star Cruisers are starships in the fictional Star Wars universe. These starships were first depicted in Return of the Jedi as the main capital ships of the Rebel Alliance fleet during the attack on the Second Death Star. Industrial Light and Magic designed the vessels to visually contrast the Galactic Empire Imperial Star Destroyers. Various Mon Calamari cruisers also appear in literature and video games of the Star Wars expanded universe. Replicas, toys and other depictions of the ships have been released by several merchandise companies.',
         name: "Calamari Cruiser",
         model: "MC80 Liberty type Star Cruiser",
         manufacturer: "Mon Calamari shipyards",
         cost_in_credits: "104000000",
         length: "1200",
-        max_atmosphering_speed: "n/a",
+        max_atmosphering_speed: "975",
         crew: "5400",
         passengers: "1200",
-        cargo_capacity: "unknown",
+        cargo_capacity: "20000",
+        featured: false,
+        type: 'cruiser',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship27_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship27_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '21',
     },
     descrip: {
+        description: 'The B-Wing is the Rebel Alliance`s most powerful fighter, it is used to attack our mighty capital ships and convoys. This fighter can link its proton torpedo launchers and ion cannons for maximum damage on its target in a minimum amount of time. It features a range finding mode for its single laser cannon which allows for near perfect range and vector data for a target lock with a 97% chance of hitting the exact point targeted. However Rebel pilots don`t often use it since it would only give away their position. In standard configuration, the auto-blasters are mounted on the chin of the command pod, while each wing has an ion cannon. The laser cannon is located at the base of the main wing. Above the base of the main wing is the Emission-Type Primary Proton Torpedo Launcher, and above the cooling intake is the Secondary Proton Torpedo Launcher. A popular alternative to this configuration is replacing the auto-blasters with three ion cannons and mounting a laser cannon on each wing. The B-Wing was deliberately designed with modular weapon mounting points.',
         name: "B-wing",
         model: "A/SF-01 B-wing starfighter",
         manufacturer: "Slayn & Korpil",
@@ -644,8 +720,22 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "45",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship29_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship29_2,
+                }
+            }
+        ]
     
 },
 {
@@ -653,6 +743,7 @@ export default  [
         id: '22',
     },
     descrip: {
+        description: 'The Naboo N-1 starfighter, also called the Naboo starfighter, was a single-seat patrol craft developed by the Theed Palace Space Vessel Engineering Corps and used by the Royal Naboo Security Forces for duties such as defense, patrol, and escorting.',
         name: "Naboo fighter",
         model: "N-1 starfighter",
         manufacturer: "Theed Palace Space Vessel Engineering Corps",
@@ -662,14 +753,29 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "65",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship31_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship31_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '23',
     },
     descrip: {
+        description: 'The Scimitar, also known as the Sith Infiltrator, was a heavily modified Star Courier and the personal starship of Darth Maul. After his defeat during the Battle of Naboo, the experimental starfighter was appropriated by Maul`s master, Darth Sidious.',
         name: "Scimitar",
         model: "Star Courier",
         manufacturer: "Republic Sienar Systems",
@@ -679,8 +785,22 @@ export default  [
         crew: "1",
         passengers: "6",
         cargo_capacity: "2500000",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship33_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship33_2,
+                }
+            }
+        ]
     
 },
 {
@@ -688,6 +808,7 @@ export default  [
         id: '24',
     },
     descrip: {
+        description: 'The J-type diplomatic barge was a starship used by the royalty of Naboo for diplomatic transport. Designed by the Theed Palace Space Vessel Engineering Corps, the craft succeeded the J-type 327 Nubian royal starship as primary transport for Naboo`s queen and royal entourage.',
         name: "J-type diplomatic barge",
         model: "J-type diplomatic barge",
         manufacturer: "Theed Palace Space Vessel Engineering Corps, Nubia Star Drives",
@@ -696,32 +817,62 @@ export default  [
         max_atmosphering_speed: "2000",
         crew: "5",
         passengers: "10",
-        cargo_capacity: "unknown",
+        cargo_capacity: "0",
+        featured: false,
+        type: 'barge',
+        weapons: false,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship34_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship34_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '25',
     },
     descrip: {
+        description: 'The AA-9 Coruscant freighter, also known as the Botajef Freighter-Liner, was a massive freighter-model used to transport large groups of people to and from Coruscant.',
         name: "AA-9 Coruscant freighter",
         model: "Botajef AA-9 Freighter-Liner",
         manufacturer: "Botajef Shipyards",
-        cost_in_credits: "unknown",
+        cost_in_credits: "740000",
         length: "390",
-        max_atmosphering_speed: "unknown",
-        crew: "unknown",
+        max_atmosphering_speed: "200",
+        crew: "70",
         passengers: "30000",
-        cargo_capacity: "unknown",
+        cargo_capacity: "80000",
+        featured: false,
+        type: 'freighter',
+        weapons: false,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship35_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship35_2,
+                }
+            }
+        ]
 },
 {
     core: {
         id: '26',
     },
     descrip: {
+        description: 'The Delta-7 Aethersprite-class light interceptor, more commonly known as the Delta-7 Aethersprite light interceptor or Jedi starfighter due to its extensive use by Jedi, was an interceptor commissioned just before the outbreak of the Clone Wars in 22 BBY. The starfighter was considered highly advanced at the time of its creation and carried sophisticated equipment, but it was expensive to produce. The ship was armed with two twin laser cannons (later models modified by Jedi Master Saesee Tiin would contain four quad-pulse laser cannons hidden behind breakaway panels, in addition to its usual complement of two twin laser cannons), and an advanced communication and sensor array kept the pilot of the ship well-prepared in firefights as well as peacetime. The Delta-7 fighter was fairly prominent in the Clone Wars, mainly due to its use by Jedi. One of the most famous encounters and tests of the Delta-7 was the tracking of bounty hunter Jango Fett by Jedi Knight Obi-Wan Kenobi through the asteroid fields of Geonosis.',
         name: "Jedi starfighter",
         model: "Delta-7 Aethersprite-class interceptor",
         manufacturer: "Kuat Systems Engineering",
@@ -731,8 +882,22 @@ export default  [
         crew: "1",
         passengers: "0",
         cargo_capacity: "60",
+        featured: false,
+        type: 'fighter',
+        weapons: true,
     },
-    images: []
+    images: [
+            {
+                image: {
+                    'url': ship36_1,
+                }
+            },
+            {
+                image: {
+                    'url': ship36_2,
+                }
+            }
+        ]
     
 }
 ];
