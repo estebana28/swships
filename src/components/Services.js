@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import styled from "styled-components";
+import { device } from "./device";
 import Empire from "../images/icons/Empire.png";
 import Fighter from "../images/icons/Fighter.png";
 import Mapis from "../images/icons/Map.png";
@@ -10,7 +11,6 @@ const ServicesWrapper = styled.section`
     text-align: center;
 
     h4 {
-        font-size: 5rem;
         margin: 3rem;
     }
     div {
@@ -23,6 +23,19 @@ const ServicesWrapper = styled.section`
     article {
         width: 40vw;
         margin: 2rem;
+    }
+    h6 {
+        font-size: 2rem;
+        margin: 10px auto;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 1441px) {
+        article {
+            flex-wrap: nowrap;
+            width: 20vw;
+        }
     }
 `;
 
@@ -55,7 +68,7 @@ export default class Services extends Component {
     render() {
         return (
             <ServicesWrapper>
-                <Title className="title" title="Services" />
+                <Title className="title" title="services" />
                 <div>
                     {this.state.services.map((item, index) => {
                         return (

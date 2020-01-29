@@ -3,43 +3,48 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import defaultImg from "../images/ships/default.jpg";
-import { memo } from 'react';
+import { memo } from "react";
 
 const ShipWrapper = styled.article`
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 40px;
     box-sizing: border-box;
-
-    &:hover {
-        transition: all 0.3s linear;
-    }
 
     .ship-wrapper {
         height: 40vh;
         width: 80vw;
         position: relative;
         &:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-    }
-
-    .ship-wrapper .details {
-        &:hover {
-            transform: translate(-50%, -50%) scale(1);
+            img {
+                background: rgba(0, 0, 0, 0.8);
+                opacity: 0.4;
+            }
+            .ship-name {
+                color: black;
+                text-shadow: 2px 2px 8px goldenrod;
+            }
+            .details {
+                transform: scale(1);
+                opacity: 1;
+                color: black;
+                text-shadow: 2px 2px 8px goldenrod;
+            }
         }
     }
 
     .details {
-        border: 4px solid #d4af37;
-        top: 50%;
-        left: 50%;
+        border: 4px solid goldenrod;
+        align-self: center;
+        top: 40%;
         width: 40vw;
-        font-size: 3rem;
+        font-size: 4rem;
         position: absolute;
-        transform: scale(0);
-        transition: all 0.3s linear;
+        transition: all 0.5s linear;
         display: inline-block;
+        color: white;
+        text-decoration: none;
+        transform: scale(0);
     }
 
     img {
@@ -51,38 +56,45 @@ const ShipWrapper = styled.article`
             10px 1px 15px -5px rgba(0, 0, 0, 0.19);
         box-shadow: 0px 10px 13px -7px #000000,
             10px 1px 15px -5px rgba(0, 0, 0, 0.19);
-        &:hover {
-            opacity: 0.3;
-        }
     }
 
     .ship-info {
         position: absolute;
-        width: 150px;
-        border: 3px solid #fff;
-        border-radius: 0px 40px 0px 40px;
-        background-color: #fff;
-        color: #000;
-        padding-top: 15px;
-        margin: -10px 0 0 -50px;
+        width: 180px;
+        border: 3px solid #000;
+        border-radius: 40px 40px 0px 40px;
+        background-color: #000;
+        color: white;
+        opacity: 0.8;
+        margin: -50px 0 0 -90px;
         z-index: 1;
         -webkit-box-shadow: 0px 2px 13px -7px #000000,
             10px 1px 15px 4px rgba(0, 0, 0, 0.19);
         box-shadow: 0px 2px 13px -7px #000000,
             10px 1px 15px 4px rgba(0, 0, 0, 0.19);
         font-family: "Press Start 2P";
-        font-size: 0.8rem;
+        h6 {
+            font-size: 1rem;
+            margin: 20px 0 10px 0;
+            text-align: center;
+        }
     }
 
     .ship-name {
-        margin: 0.5rem;
+        margin-top: -1rem;
         width: 80vw;
         text-align: center;
         position: absolute;
 
         color: white;
-        font-size: 1.8rem;
-        font-weight: 800;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    @media (min-width: 1441px) {
+        .ship-wrapper {
+            width: 25vw;
+        }
     }
 `;
 
@@ -97,12 +109,12 @@ const Ship = memo(({ ship }) => {
                     <h6>${cost_in_credits}</h6>
                     <p>brand new</p>
                 </div>
-            </div>
-            <Link className="details" to={`/ships/${slug}`}>
-                details
-            </Link>
-            <div className="ship-name">
-                <p>{name}</p>
+                <div className="ship-name">
+                    <p>{name}</p>
+                </div>
+                <Link className="details" to={`/ships/${slug}`}>
+                    details
+                </Link>
             </div>
         </ShipWrapper>
     );
@@ -113,7 +125,7 @@ Ship.propTypes = {
         name: PropTypes.string.isRequired,
         slug: PropTypes.string.isRequired,
         images: PropTypes.arrayOf(PropTypes.string).isRequired,
-        cost_in_credits: PropTypes.number.isRequired
+        cost_in_credits: PropTypes.string.isRequired
     })
 };
 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const TitleWrapper = styled.div`
     margin-bottom: 25px;
     h4 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 `;
 

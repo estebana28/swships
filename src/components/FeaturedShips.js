@@ -12,11 +12,15 @@ const FeaturedWrapper = styled.section`
 
     h4 {
         margin: 3rem;
-        font-size: 3rem;
     }
     div {
         display: flex;
         flex-direction: column;
+    }
+    @media (min-width: 1441px) {
+        div {
+            flex-direction: row;
+        }
     }
 `;
 
