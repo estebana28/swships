@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/swships/static/css/main.9def0bfe.chunk.css",
-    "main.js": "/swships/static/js/main.313161f4.chunk.js",
-    "main.js.map": "/swships/static/js/main.313161f4.chunk.js.map",
+    "main.css": "/swships/static/css/main.897043d3.chunk.css",
+    "main.js": "/swships/static/js/main.a664cbc3.chunk.js",
+    "main.js.map": "/swships/static/js/main.a664cbc3.chunk.js.map",
     "runtime-main.js": "/swships/static/js/runtime-main.70c4d332.js",
     "runtime-main.js.map": "/swships/static/js/runtime-main.70c4d332.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/swships/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.2161954b.chunk.js": "/swships/static/js/2.2161954b.chunk.js",
-    "static/js/2.2161954b.chunk.js.map": "/swships/static/js/2.2161954b.chunk.js.map",
+    "static/js/2.89a5ba06.chunk.js": "/swships/static/js/2.89a5ba06.chunk.js",
+    "static/js/2.89a5ba06.chunk.js.map": "/swships/static/js/2.89a5ba06.chunk.js.map",
     "index.html": "/swships/index.html",
-    "precache-manifest.ae4bce82fbd46249f41b50d540abb52d.js": "/swships/precache-manifest.ae4bce82fbd46249f41b50d540abb52d.js",
+    "precache-manifest.46620950b52266565caeeffd75dec66e.js": "/swships/precache-manifest.46620950b52266565caeeffd75dec66e.js",
     "service-worker.js": "/swships/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/swships/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.9def0bfe.chunk.css.map": "/swships/static/css/main.9def0bfe.chunk.css.map",
-    "static/js/2.2161954b.chunk.js.LICENSE": "/swships/static/js/2.2161954b.chunk.js.LICENSE",
+    "static/css/main.897043d3.chunk.css.map": "/swships/static/css/main.897043d3.chunk.css.map",
+    "static/js/2.89a5ba06.chunk.js.LICENSE": "/swships/static/js/2.89a5ba06.chunk.js.LICENSE",
     "static/media/Empire.png": "/swships/static/media/Empire.9dfcfcae.png",
     "static/media/aa9-coruscant-freighter-2.jpg": "/swships/static/media/aa9-coruscant-freighter-2.211f9386.jpg",
     "static/media/aa9-coruscant-freighter.jpg": "/swships/static/media/aa9-coruscant-freighter.26e5c981.jpg",
@@ -74,9 +72,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.70c4d332.js",
-    "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.2161954b.chunk.js",
-    "static/css/main.9def0bfe.chunk.css",
-    "static/js/main.313161f4.chunk.js"
+    "static/js/2.89a5ba06.chunk.js",
+    "static/css/main.897043d3.chunk.css",
+    "static/js/main.a664cbc3.chunk.js"
   ]
 }
