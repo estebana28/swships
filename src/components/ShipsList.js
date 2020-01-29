@@ -11,7 +11,7 @@ const ListWrapper = styled.section`
 `;
 
 const ShipsList = ({ ships }) => {
-    if (ships.lenght === 0) {
+    if (ships.length === 0) {
         return (
             <div className="empty-search">
                 <h3>

@@ -7,10 +7,11 @@ import {ShipContext} from '../context';
 
 export default class SingleShip extends Component {
     constructor(props){
-        super(props)
+        super(props);
+        console.log(this.props);
         this.state = {
-            slug:this.props.match.params.slug,
-            defaultBcg
+            slug: this.props.match.params.slug,
+            defaultBcg: defaultBcg
         };
     }
 
@@ -26,9 +27,9 @@ export default class SingleShip extends Component {
         if (!ship) {
             return (
                 <div className="error">
-                    <h3>no such room could be found</h3>
+                    <h3>no such ship could be found</h3>
                     <Link to='/ships' className="btn-primary">
-                    back to rooms
+                    back to ships
                     </Link>
                 </div>
             );
@@ -38,8 +39,8 @@ export default class SingleShip extends Component {
         return (
             <>
             <Hero img={images[0]}>
-                <Banner title={`${name}`}>
-                    <Link to='/ships' className="btn-primary">back to rooms</Link>
+                <Banner title={`${name} ship`}>
+                    <Link to='/ships' className="btn-primary">back to ships</Link>
                 </Banner>
             </Hero>
 

@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <>
 
       <Navbar />
       <Switch>
@@ -24,7 +24,7 @@ function App() {
 
       </Switch>
 
-    </div>
+    </>
   );
 }
 

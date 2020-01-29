@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import defaultImg from "../images/ships/default.jpg";
+import { memo } from 'react';
 
 const ShipWrapper = styled.article`
     display: flex;
@@ -85,7 +86,7 @@ const ShipWrapper = styled.article`
     }
 `;
 
-export default function Ship({ ship }) {
+const Ship = memo(({ ship }) => {
     const { name, slug, images, cost_in_credits } = ship;
 
     return (
@@ -105,7 +106,7 @@ export default function Ship({ ship }) {
             </div>
         </ShipWrapper>
     );
-}
+});
 
 Ship.propTypes = {
     ship: PropTypes.shape({
@@ -115,3 +116,5 @@ Ship.propTypes = {
         cost_in_credits: PropTypes.number.isRequired
     })
 };
+
+export default Ship;

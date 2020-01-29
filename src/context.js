@@ -70,9 +70,9 @@ formatData(items) {
 }
 
 
-getShip = (slug) => {
+getShip = slug => {
     let tempShips = [...this.state.ships];
-    const ship = tempShips.find((ship) => ship.slug === slug);
+    const ship = tempShips.find(ship => ship.slug === slug);
     return ship;
 };
 
@@ -82,8 +82,8 @@ handleChange = event => {
     const name = event.target.name;
     this.setState({
         [name]:value
-    },this.filterShips)
-}
+    },this.filterShips);
+};
 
 filterShips =  ()=> {
     let{
@@ -149,14 +149,16 @@ filterShips =  ()=> {
 
 const ShipConsumer = ShipContext.Consumer;
 
+export{ShipProvider, ShipConsumer, ShipContext };
+
+
 export function withShipConsumer(Component){
     return function ConsumerWrapper(props){
         return (
             <ShipConsumer>
                 {value => <Component {...props} context={value}/>}
             </ShipConsumer>
-        )
-    }
+        );
+    };
 }
 
-export{ShipProvider, ShipConsumer, ShipContext };
