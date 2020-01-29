@@ -87,7 +87,7 @@ handleChange = event => {
 
 filterShips =  ()=> {
     let{
-        ships,type,cargo_capacity,max_atmosphering_speed,minSpeed,maxSpeed,minSize,maxSize,minCost,maxCost,length,weapons,passengers
+        ships,type,cargo_capacity,max_atmosphering_speed,minCost,maxCost,length,weapons,passengers
     } = this.state
 
     let tempShips =[...ships];
