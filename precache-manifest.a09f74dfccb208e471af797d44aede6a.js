@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3914adf3f6574a3d1acb47ef70f732e",
+    "revision": "fb72107a2d7a52acd441c862670f392d",
     "url": "/swships/index.html"
   },
   {
-    "revision": "183bc045eea6d8273d94",
+    "revision": "d331488b4d1968d6afc4",
     "url": "/swships/static/css/main.9def0bfe.chunk.css"
   },
   {
-    "revision": "fb8bec1acdf05fe4c5fa",
-    "url": "/swships/static/js/2.89a5ba06.chunk.js"
+    "revision": "12e175533091f8e8f8b1",
+    "url": "/swships/static/js/2.19bf6f91.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/swships/static/js/2.89a5ba06.chunk.js.LICENSE"
+    "url": "/swships/static/js/2.19bf6f91.chunk.js.LICENSE"
   },
   {
-    "revision": "183bc045eea6d8273d94",
-    "url": "/swships/static/js/main.8842d09b.chunk.js"
+    "revision": "d331488b4d1968d6afc4",
+    "url": "/swships/static/js/main.baa57376.chunk.js"
   },
   {
     "revision": "fa0f6685a0325e58f03e",
@@ -198,6 +198,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ccf9f897f92e206a09ee1d625682355f",
     "url": "/swships/static/media/star-destroyer-2.ccf9f897.jpg"
+  },
+  {
+    "revision": "dab63df73597ca9975a595eefcc9618b",
+    "url": "/swships/static/media/star-destroyer-3.dab63df7.jpg"
+  },
+  {
+    "revision": "ec3bb8dc8217811cd070183607aed7dc",
+    "url": "/swships/static/media/star-destroyer-4.ec3bb8dc.jpg"
   },
   {
     "revision": "e8ef6caa30cb3631392955c032e6087f",
