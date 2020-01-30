@@ -19,8 +19,6 @@ const BannerWrapper = styled.div`
     div {
         background-color: transparent;
     }
-    @media ${device.laptop} {
-    }
 `;
 
 const Banner = ({ children, title, subtitle }) => {
