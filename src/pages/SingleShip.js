@@ -23,7 +23,6 @@ const SingleShipWrapper = styled.section`
         height: 50vh;
         position: relative;
         margin: 10px;
-        width: 10vw;
         transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
     }
     .panel.active {
@@ -77,7 +76,6 @@ const SingleShipWrapper = styled.section`
         }
         .panel {
             height: 80vh;
-            flex: 0.2;
         }
     }
 `;
