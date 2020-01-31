@@ -9,20 +9,22 @@ import styled from "styled-components";
 const SingleShipWrapper = styled.section`
     .single-ship-images {
         display: flex;
-        max-width: 90vw;
-        margin: 20px auto;
+        width: 90vw;
+        margin: 1rem 2rem;
+        height: 50vh;
     }
+
     .panel {
         background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 50px;
         color: #fff;
-        flex: 0.3;
         cursor: pointer;
         height: 50vh;
         position: relative;
-        margin: 10px;
+        margin: 0.3rem;
+        width: 7vw;
         transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
     }
     .panel.active {
@@ -76,6 +78,27 @@ const SingleShipWrapper = styled.section`
         }
         .panel {
             height: 80vh;
+        }
+        .single-ship-data {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                margin: 2rem 0;
+            }
+        }
+        .ship-description {
+            width: 55%;
+            order: 1;
+            align-self: flex-start;
+            font-size: 2rem;
+        }
+        .ship-info {
+            width: 40%;
+            order: 2;
+            font-size: 1.5rem;
         }
     }
 `;

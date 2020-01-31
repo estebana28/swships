@@ -16,12 +16,8 @@ function App() {
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/swships/ships" component={Ships} />
-                <Route
-                    exact
-                    path="/swships/ships/:slug"
-                    component={SingleShip}
-                />
+                <Route exact path="/ships" component={Ships} />
+                <Route exact path="/ships/:slug" component={SingleShip} />
                 <Route component={Error} />
             </Switch>
         </>
