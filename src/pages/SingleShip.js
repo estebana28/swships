@@ -10,7 +10,7 @@ const SingleShipWrapper = styled.section`
     .single-ship-images {
         display: flex;
         max-width: 90vw;
-        margin: 20px auto;
+        margin: 20px auto; pedodecolor
     }
     .panel {
         background-size: auto 100%;
