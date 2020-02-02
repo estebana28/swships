@@ -6,16 +6,17 @@ import { Link } from "react-router-dom";
 
 const NavbarWrapper = styled.nav`
     background-color: #000;
-    height: 20vh;
+    height: 16vh;
     display: flex;
     img {
         height: 10vh;
-        margin: 5vh 5vw;
+        margin: 3vh 3vw;
     }
 
     button {
         align-items: flex-end;
         right: 0;
+        display: none;
     }
     ul {
         display: none;
@@ -33,7 +34,7 @@ const NavbarWrapper = styled.nav`
 
 export default class Navbar extends Component {
     state = {
-        isOpen: false
+        isOpen: true
     };
     handleToggle = () => {
         this.setState({ isOpen: !this.state.isOpen });

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import styled from "styled-components";
-import { device } from "./device";
 import Empire from "../images/icons/Empire.png";
 import Fighter from "../images/icons/Fighter.png";
 import Mapis from "../images/icons/Map.png";

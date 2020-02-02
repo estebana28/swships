@@ -13,7 +13,7 @@ export const Home = () => {
         <HomeWrapper>
             <Hero>
                 <Banner
-                    title="KickAss Ships"
+                    title="KICKASS SHIPS"
                     subtitle="The best ships of the galaxy!!"
                 >
                     <Link to="/ships" className="btn-primary banner-link">
