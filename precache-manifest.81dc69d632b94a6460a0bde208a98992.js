@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7df31db9506b1524f69a0ca6c57ddbd4",
+    "revision": "937d3b0747c9e8b1d56beceee7d686cd",
     "url": "/swships/index.html"
   },
   {
-    "revision": "9383fd38c8d8b0d294aa",
+    "revision": "6d8fad0cfd4b558fdb54",
     "url": "/swships/static/css/main.9def0bfe.chunk.css"
   },
   {
-    "revision": "12e175533091f8e8f8b1",
-    "url": "/swships/static/js/2.19bf6f91.chunk.js"
+    "revision": "e77301d0bc7c54e7c586",
+    "url": "/swships/static/js/2.fd194ee9.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/swships/static/js/2.19bf6f91.chunk.js.LICENSE"
+    "url": "/swships/static/js/2.fd194ee9.chunk.js.LICENSE"
   },
   {
-    "revision": "9383fd38c8d8b0d294aa",
-    "url": "/swships/static/js/main.6311fd2f.chunk.js"
+    "revision": "6d8fad0cfd4b558fdb54",
+    "url": "/swships/static/js/main.c198c051.chunk.js"
   },
   {
     "revision": "fa0f6685a0325e58f03e",
