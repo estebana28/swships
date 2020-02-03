@@ -12,15 +12,16 @@ const BannerWrapper = styled.div`
     padding-top: 4rem;
     font-size: 2rem;
     color: #fff;
-    font-family: "special elite";
+    font-family: "work sans";
+    font-weight: bold;
     h1 {
-        margin-top: 9rem;
+        margin-top: 15rem;
         margin-bottom: 0.8rem;
-        margin-left: 0.3rem;
+        margin-left: 0.5rem;
     }
     p {
         font-size: 1.5rem;
-        margin-left: 0.3rem;
+        margin-left: 0.5rem;
     }
     div {
         margin: 3rem 1.5rem;

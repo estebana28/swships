@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const NavbarWrapper = styled.nav`
     background-color: #000;
-    height: 16vh;
+    height: 12vh;
     display: flex;
     img {
-        height: 10vh;
-        margin: 3vh 3vw;
+        height: 8vh;
+        margin: 2vh 2vw;
     }
 
     button {

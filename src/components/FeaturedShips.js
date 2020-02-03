@@ -9,9 +9,10 @@ const FeaturedWrapper = styled.section`
     width: 80vw;
     text-align: center;
     margin: auto;
-
+    background-color: #fff;
     h4 {
-        margin: 3rem;
+        margin: 2rem;
+        font-size: 4rem;
     }
     div {
         display: flex;
@@ -35,7 +36,7 @@ export default class FeaturedShips extends Component {
 
         return (
             <FeaturedWrapper>
-                <Title title="featured ships" />
+                <Title title="FEATURED SHIPS" />
                 <div>{loading ? <Loading /> : ships}</div>
             </FeaturedWrapper>
         );

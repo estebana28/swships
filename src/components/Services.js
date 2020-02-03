@@ -8,16 +8,20 @@ import Rebel from "../images/icons/Rebel.png";
 
 const ServicesWrapper = styled.section`
     text-align: center;
-
+    font-family: "work sans";
+    margin: 0 auto;
     h4 {
         margin: 3rem;
+        font-weight: bold;
     }
     div {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+    }
+    img {
+        height: 20vh;
     }
     article {
         width: 40vw;
@@ -33,7 +37,10 @@ const ServicesWrapper = styled.section`
     @media (min-width: 1441px) {
         article {
             flex-wrap: nowrap;
-            width: 20vw;
+            width: 15vw;
+        }
+        img {
+            height: 15vh;
         }
     }
 `;
@@ -55,7 +62,7 @@ export default class Services extends Component {
                 img: Mapis,
                 title: "Delivery GalaxyWide",
                 info:
-                    "We deliver your purchased ship anywere in the whole universe"
+                    "We deliver your purchased ship anywhere in the whole universe"
             },
             {
                 img: Rebel,
@@ -67,7 +74,7 @@ export default class Services extends Component {
     render() {
         return (
             <ServicesWrapper>
-                <Title className="title" title="services" />
+                <Title className="title" title="SERVICES" />
                 <div>
                     {this.state.services.map((item, index) => {
                         return (

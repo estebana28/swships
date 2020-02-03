@@ -8,7 +8,7 @@ import { ShipProvider } from "./context";
 
 WebFont.load({
     google: {
-        families: ["Press Start 2P", "cursive", "Special Elite"]
+        families: ["Press Start 2P", "cursive", "Special Elite", "Work sans"]
     }
 });
 
