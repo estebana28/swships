@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/swships/static/css/main.9def0bfe.chunk.css",
-    "main.js": "/swships/static/js/main.c198c051.chunk.js",
-    "main.js.map": "/swships/static/js/main.c198c051.chunk.js.map",
+    "main.js": "/swships/static/js/main.292f5840.chunk.js",
+    "main.js.map": "/swships/static/js/main.292f5840.chunk.js.map",
     "runtime-main.js": "/swships/static/js/runtime-main.70c4d332.js",
     "runtime-main.js.map": "/swships/static/js/runtime-main.70c4d332.js.map",
     "static/js/2.fd194ee9.chunk.js": "/swships/static/js/2.fd194ee9.chunk.js",
     "static/js/2.fd194ee9.chunk.js.map": "/swships/static/js/2.fd194ee9.chunk.js.map",
     "index.html": "/swships/index.html",
-    "precache-manifest.81dc69d632b94a6460a0bde208a98992.js": "/swships/precache-manifest.81dc69d632b94a6460a0bde208a98992.js",
+    "precache-manifest.f898dcf87e61e810d7b801a09c2d2948.js": "/swships/precache-manifest.f898dcf87e61e810d7b801a09c2d2948.js",
     "service-worker.js": "/swships/service-worker.js",
     "static/css/main.9def0bfe.chunk.css.map": "/swships/static/css/main.9def0bfe.chunk.css.map",
     "static/js/2.fd194ee9.chunk.js.LICENSE": "/swships/static/js/2.fd194ee9.chunk.js.LICENSE",
@@ -61,12 +61,12 @@
     "static/media/star-destroyer.jpg": "/swships/static/media/star-destroyer.e8ef6caa.jpg",
     "static/media/t-70-2.jpg": "/swships/static/media/t-70-2.87e0f673.jpg",
     "static/media/t-70.jpg": "/swships/static/media/t-70.53bffda0.jpg",
-    "static/media/tatooine.jpg": "/swships/static/media/tatooine.76b44a87.jpg",
     "static/media/tie-2.jpg": "/swships/static/media/tie-2.0fdba740.jpg",
     "static/media/tie.jpg": "/swships/static/media/tie.cb00b2b5.jpg",
     "static/media/trade-federation-cruiser.jpg": "/swships/static/media/trade-federation-cruiser.aa96fb6c.jpg",
     "static/media/v-wing-2.jpg": "/swships/static/media/v-wing-2.7af02464.jpg",
     "static/media/v-wing.jpg": "/swships/static/media/v-wing.8c1fdd66.jpg",
+    "static/media/vader.jpg": "/swships/static/media/vader.39c9fb95.jpg",
     "static/media/x-wing-2.jpg": "/swships/static/media/x-wing-2.59a096da.jpg",
     "static/media/x-wing.jpg": "/swships/static/media/x-wing.73187632.jpg",
     "static/media/y-wing-2.jpg": "/swships/static/media/y-wing-2.1a482ed2.jpg",
@@ -76,6 +76,6 @@
     "static/js/runtime-main.70c4d332.js",
     "static/js/2.fd194ee9.chunk.js",
     "static/css/main.9def0bfe.chunk.css",
-    "static/js/main.c198c051.chunk.js"
+    "static/js/main.292f5840.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "937d3b0747c9e8b1d56beceee7d686cd",
+    "revision": "d3b54fc9ce01f0b5d50801927b714f11",
     "url": "/swships/index.html"
   },
   {
-    "revision": "6d8fad0cfd4b558fdb54",
+    "revision": "4a33a31f19a5ed28aa4f",
     "url": "/swships/static/css/main.9def0bfe.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swships/static/js/2.fd194ee9.chunk.js.LICENSE"
   },
   {
-    "revision": "6d8fad0cfd4b558fdb54",
-    "url": "/swships/static/js/main.c198c051.chunk.js"
+    "revision": "4a33a31f19a5ed28aa4f",
+    "url": "/swships/static/js/main.292f5840.chunk.js"
   },
   {
     "revision": "fa0f6685a0325e58f03e",
@@ -220,10 +220,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swships/static/media/t-70.53bffda0.jpg"
   },
   {
-    "revision": "76b44a87278a5e4da5f99be2d28204a7",
-    "url": "/swships/static/media/tatooine.76b44a87.jpg"
-  },
-  {
     "revision": "0fdba740164d6d07244804ca0e95e85a",
     "url": "/swships/static/media/tie-2.0fdba740.jpg"
   },
@@ -242,6 +238,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8c1fdd66dc7c7568eb27c2a968d95563",
     "url": "/swships/static/media/v-wing.8c1fdd66.jpg"
+  },
+  {
+    "revision": "39c9fb95b14d35ea1058edd9c14cb879",
+    "url": "/swships/static/media/vader.39c9fb95.jpg"
   },
   {
     "revision": "59a096daa44b450ce03543f700f6cb72",
