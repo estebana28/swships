@@ -18,8 +18,9 @@ const FeaturedWrapper = styled.section`
         display: flex;
         flex-direction: column;
     }
-    @media (min-width: 1441px) {
-        div {
+    @media (min-width: 1440px) {
+        .featured-ship-wrapper {
+            display: flex;
             flex-direction: row;
         }
     }
@@ -37,7 +38,9 @@ export default class FeaturedShips extends Component {
         return (
             <FeaturedWrapper>
                 <Title title="FEATURED SHIPS" />
-                <div>{loading ? <Loading /> : ships}</div>
+                <div className="featured-ship-wrapper">
+                    {loading ? <Loading /> : ships}
+                </div>
             </FeaturedWrapper>
         );
     }

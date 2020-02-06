@@ -8,6 +8,7 @@ const NavbarWrapper = styled.nav`
     background-color: #000;
     height: 12vh;
     display: flex;
+    width: 100vw;
     img {
         height: 8vh;
         margin: 2vh 2vw;

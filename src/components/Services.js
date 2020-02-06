@@ -7,25 +7,26 @@ import Mapis from "../images/icons/Map.png";
 import Rebel from "../images/icons/Rebel.png";
 
 const ServicesWrapper = styled.section`
+    display: flex;
     text-align: center;
+    justify-content: center;
     font-family: "work sans";
     margin: 0 auto;
+    flex-direction: column;
     h4 {
         margin: 3rem;
         font-weight: bold;
     }
     div {
-        display: flex;
-        flex-direction: column;
         width: 90vw;
-        justify-content: center;
+        margin: 0 auto;
     }
     img {
         height: 20vh;
     }
     article {
         width: 40vw;
-        margin: 2rem;
+        margin: 2rem auto;
     }
     h6 {
         font-size: 2rem;
@@ -34,10 +35,16 @@ const ServicesWrapper = styled.section`
     p {
         font-size: 1.5rem;
     }
-    @media (min-width: 1441px) {
+    @media (min-width: 1440px) {
+        .services-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         article {
-            flex-wrap: nowrap;
-            width: 15vw;
+            width: 40vw;
+            margin: 0;
         }
         img {
             height: 15vh;
@@ -75,7 +82,7 @@ export default class Services extends Component {
         return (
             <ServicesWrapper>
                 <Title className="title" title="SERVICES" />
-                <div>
+                <div className="services-wrapper">
                     {this.state.services.map((item, index) => {
                         return (
                             <article key={index}>

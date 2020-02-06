@@ -6,7 +6,9 @@ import Services from "../components/Services";
 import FeaturedShips from "../components/FeaturedShips";
 import styled from "styled-components";
 
-const HomeWrapper = styled.main``;
+const HomeWrapper = styled.main`
+    width: 100vw;
+`;
 
 export const Home = () => {
     return (

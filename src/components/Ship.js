@@ -13,44 +13,17 @@ const ShipWrapper = styled.article`
 
     .ship-wrapper {
         height: 40vh;
-        width: 80vw;
+        width: 70vw;
         position: relative;
-        &:hover {
-            img {
-                background: rgba(0, 0, 0, 0.8);
-                opacity: 0.4;
-            }
-            .ship-name {
-                color: black;
-                text-shadow: 2px 2px 8px goldenrod;
-            }
-            .details {
-                transform: scale(1);
-                opacity: 1;
-                color: black;
-                text-shadow: 2px 2px 8px goldenrod;
-            }
-        }
     }
 
     .details {
-        border: 4px solid goldenrod;
-        align-self: center;
-        top: 40%;
-        width: 40vw;
-        font-size: 4rem;
-        position: absolute;
-        transition: all 0.5s linear;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        transform: scale(0);
     }
 
     img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 40vh;
         border-radius: 5px;
         -webkit-box-shadow: 0px 10px 13px -7px #000000,
             10px 1px 15px -5px rgba(0, 0, 0, 0.19);
@@ -81,8 +54,8 @@ const ShipWrapper = styled.article`
     }
 
     .ship-name {
-        margin-top: -1rem;
-        width: 80vw;
+        margin: -1rem auto;
+        width: 100%;
         text-align: center;
         position: absolute;
 
@@ -91,9 +64,36 @@ const ShipWrapper = styled.article`
         font-weight: 900;
     }
 
-    @media (min-width: 1441px) {
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 25vw;
+        height: 22vh;
+        justify-content: space-between;
         .ship-wrapper {
             width: 25vw;
+            height: 22vh;
+            flex-direction: row;
+            &:hover {
+                img {
+                    background: rgba(0, 0, 0, 0.8);
+                    opacity: 0.4;
+                }
+                .ship-name {
+                    color: black;
+                    text-shadow: 2px 2px 8px goldenrod;
+                }
+                .details {
+                    transform: scale(1);
+                    opacity: 1;
+                    color: black;
+                    text-shadow: 2px 2px 8px goldenrod;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
 `;
@@ -104,16 +104,15 @@ const Ship = memo(({ ship }) => {
     return (
         <ShipWrapper>
             <div className="ship-wrapper">
-                <img src={images[0] || defaultImg} alt="single ship" />
-                <div className="ship-info">
-                    <h6>${cost_in_credits}</h6>
-                    <p>brand new</p>
-                </div>
-                <div className="ship-name">
-                    <p>{name}</p>
-                </div>
                 <Link className="details" to={`/ships/${slug}`}>
-                    details
+                    <div className="ship-info">
+                        <h6>${cost_in_credits}</h6>
+                        <p>brand new</p>
+                    </div>
+                    <div className="ship-name">
+                        <p>{name}</p>
+                    </div>
+                    <img src={images[0] || defaultImg} alt="single ship" />
                 </Link>
             </div>
         </ShipWrapper>

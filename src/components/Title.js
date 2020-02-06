@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const TitleWrapper = styled.div`
     margin-bottom: 25px;
+    text-align: center;
     h4 {
         font-size: 5rem;
         font-family: "work sans";
