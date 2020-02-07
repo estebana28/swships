@@ -95,6 +95,16 @@ const ShipWrapper = styled.article`
             width: 100%;
             height: 100%;
         }
+        .ship-info {
+            width: 130px;
+            margin: -60px 0 0 -70px;
+            h6 {
+                font-size: 0.7rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
     }
 `;
 

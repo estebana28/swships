@@ -43,12 +43,15 @@ const ServicesWrapper = styled.section`
             justify-content: space-between;
         }
         article {
-            width: 40vw;
+            width: 20vw;
             margin: 0;
         }
         img {
             height: 15vh;
         }
+    }
+
+    @media (min-width: 769px) {
     }
 `;
 

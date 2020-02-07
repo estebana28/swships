@@ -11,7 +11,7 @@ const FeaturedWrapper = styled.section`
     margin: auto;
     background-color: #fff;
     h4 {
-        margin: 2rem;
+        margin: 2rem 0;
         font-size: 4rem;
     }
     div {
@@ -19,6 +19,7 @@ const FeaturedWrapper = styled.section`
         flex-direction: column;
     }
     @media (min-width: 1440px) {
+        margin: 0 5rem;
         .featured-ship-wrapper {
             display: flex;
             flex-direction: row;
