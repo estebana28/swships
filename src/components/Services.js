@@ -35,7 +35,7 @@ const ServicesWrapper = styled.section`
     p {
         font-size: 1.5rem;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 769px) {
         .services-wrapper {
             display: flex;
             flex-direction: row;
@@ -43,7 +43,7 @@ const ServicesWrapper = styled.section`
             justify-content: space-between;
         }
         article {
-            width: 20vw;
+            width: 40vw;
             margin: 0;
         }
         img {
@@ -51,7 +51,10 @@ const ServicesWrapper = styled.section`
         }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 1440px) {
+        article {
+            width: 20vw;
+        }
     }
 `;
 

@@ -39,7 +39,7 @@ const ShipWrapper = styled.article`
         background-color: #000;
         color: white;
         opacity: 0.8;
-        margin: -50px 0 0 -90px;
+        margin: -75px 0 0 -90px;
         z-index: 1;
         -webkit-box-shadow: 0px 2px 13px -7px #000000,
             10px 1px 15px 4px rgba(0, 0, 0, 0.19);
@@ -63,17 +63,25 @@ const ShipWrapper = styled.article`
         font-size: 2rem;
         font-weight: 900;
     }
-
+    @media (min-width: 769px) {
+        margin: 5rem 2rem;
+        width: 30vw;
+        height: 28vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .ship-info {
+            margin: -75px 0 0 -90px;
+        }
+    }
     @media (min-width: 1440px) {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 25vw;
+        width: 22vw;
         height: 22vh;
-        justify-content: space-between;
+        margin: 2rem 2rem;
         .ship-wrapper {
-            width: 25vw;
+            width: 22vw;
             height: 22vh;
-            flex-direction: row;
             &:hover {
                 img {
                     background: rgba(0, 0, 0, 0.8);

@@ -7,20 +7,20 @@ import { Link } from "react-router-dom";
 const NavbarWrapper = styled.nav`
     background-color: #000;
     height: 12vh;
-    display: flex;
     width: 100vw;
+    display: flex;
     img {
         height: 8vh;
         margin: 2vh 2vw;
     }
 
     button {
-        align-items: flex-end;
         right: 0;
         display: none;
     }
     ul {
         display: none;
+        width: 100%;
     }
 
     li {
@@ -30,6 +30,30 @@ const NavbarWrapper = styled.nav`
 
     a {
         color: white;
+    }
+    @media (min-width: 769px) {
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: flex-end;
+            align-self: center;
+
+            margin-right: 2rem;
+        }
+        li {
+            margin: 0 1rem;
+        }
+        a {
+            text-decoration: none;
+            font-family: "work sans";
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    @media (min-width: 1440px) {
+        ul {
+        }
     }
 `;
 

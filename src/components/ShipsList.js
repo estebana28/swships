@@ -8,6 +8,17 @@ const ListWrapper = styled.section`
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+    @media (min-width: 769px) {
+        ul {
+            width: 100%;
+            padding: 0;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
 `;
 
 const ShipsList = ({ ships }) => {
@@ -23,11 +34,11 @@ const ShipsList = ({ ships }) => {
     }
     return (
         <ListWrapper>
-            <article>
+            <ul className="article-list">
                 {ships.map(item => {
                     return <Ship key={item.id} ship={item} />;
                 })}
-            </article>
+            </ul>
         </ListWrapper>
     );
 };
