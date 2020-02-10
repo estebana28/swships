@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/swships/static/css/main.9def0bfe.chunk.css",
-    "main.js": "/swships/static/js/main.addbb90f.chunk.js",
-    "main.js.map": "/swships/static/js/main.addbb90f.chunk.js.map",
+    "main.js": "/swships/static/js/main.17bc822e.chunk.js",
+    "main.js.map": "/swships/static/js/main.17bc822e.chunk.js.map",
     "runtime-main.js": "/swships/static/js/runtime-main.70c4d332.js",
     "runtime-main.js.map": "/swships/static/js/runtime-main.70c4d332.js.map",
     "static/js/2.fd194ee9.chunk.js": "/swships/static/js/2.fd194ee9.chunk.js",
     "static/js/2.fd194ee9.chunk.js.map": "/swships/static/js/2.fd194ee9.chunk.js.map",
     "index.html": "/swships/index.html",
-    "precache-manifest.dd5fffcc90295b2e2646efd6a1ec5413.js": "/swships/precache-manifest.dd5fffcc90295b2e2646efd6a1ec5413.js",
+    "precache-manifest.3ff9d92969de51b11e5be6295eff7730.js": "/swships/precache-manifest.3ff9d92969de51b11e5be6295eff7730.js",
     "service-worker.js": "/swships/service-worker.js",
     "static/css/main.9def0bfe.chunk.css.map": "/swships/static/css/main.9def0bfe.chunk.css.map",
     "static/js/2.fd194ee9.chunk.js.LICENSE": "/swships/static/js/2.fd194ee9.chunk.js.LICENSE",
@@ -76,6 +76,6 @@
     "static/js/runtime-main.70c4d332.js",
     "static/js/2.fd194ee9.chunk.js",
     "static/css/main.9def0bfe.chunk.css",
-    "static/js/main.addbb90f.chunk.js"
+    "static/js/main.17bc822e.chunk.js"
   ]
 }
