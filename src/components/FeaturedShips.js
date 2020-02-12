@@ -18,11 +18,16 @@ const FeaturedWrapper = styled.section`
         display: flex;
         flex-direction: column;
     }
+    @media (min-width: 769px) {
+        .featured-ship-wrapper {
+            flex-direction: column;
+        }
+    }
     @media (min-width: 1440px) {
         margin: 0 5rem;
         .featured-ship-wrapper {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
     }
 `;

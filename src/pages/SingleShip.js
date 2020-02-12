@@ -50,9 +50,38 @@ const SingleShipWrapper = styled.section`
     .ship-description {
         order: 1;
         width: 100%;
+        h2 {
+            font-size: 3rem;
+            font-family: "work sans";
+        }
+        h4 {
+            font-size: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+        }
+        p {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+        }
     }
     .ship-info {
         order: 2;
+        h2 {
+            font-size: 2rem;
+            font-family: "work sans";
+        }
+        h5 {
+            font-size: 1.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+            font-weight: 300;
+        }
+        h5 span {
+            font-weight: 500;
+        }
     }
 
     @media (min-width: 769px) {
@@ -70,8 +99,21 @@ const SingleShipWrapper = styled.section`
         .panel:nth-of-type(5) {
             display: flex;
         }
+        .ship-description {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        .ship-info {
+            h2 {
+                font-size: 3rem;
+            }
+            h5 {
+                font-size: 2rem;
+            }
+        }
     }
-    @media (min-width: 1441px) {
+    @media (min-width: 1440px) {
         .single-ship-images {
             height: 80vh;
             width: 95vw;
@@ -93,12 +135,22 @@ const SingleShipWrapper = styled.section`
             width: 55%;
             order: 1;
             align-self: flex-start;
-            font-size: 2rem;
+            h2 {
+                font-size: 4rem;
+            }
+            h4 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 2rem;
+            }
         }
         .ship-info {
             width: 40%;
             order: 2;
-            font-size: 1.5rem;
+            h2 {
+                font-size: 4rem;
+            }
         }
     }
 `;
@@ -180,23 +232,39 @@ export default class SingleShip extends Component {
                     </div>
                     <div className="single-ship-data">
                         <article className="ship-description">
-                            <h2>details</h2>
+                            <h2>description</h2>
                             <h4>{name}</h4>
                             <p>{description}</p>
                         </article>
                         <article className="ship-info">
                             <h2>info</h2>
-                            <h5>model : {model}</h5>
-                            <h5>price : ${cost_in_credits}</h5>
-                            <h5>manufacturer : {manufacturer}</h5>
-                            <h5>lenght : {length} mts.</h5>
-                            <h5>speed : {max_atmosphering_speed} km/h</h5>
-                            <h5>crew : {crew}</h5>
                             <h5>
-                                passengers :{" "}
+                                <span>model :</span> {model}
+                            </h5>
+                            <h5>
+                                <span>price :</span> ${cost_in_credits}
+                            </h5>
+                            <h5>
+                                <span>manufacturer :</span> {manufacturer}
+                            </h5>
+                            <h5>
+                                <span>lenght :</span> {length} mts.
+                            </h5>
+                            <h5>
+                                <span>speed :</span> {max_atmosphering_speed}{" "}
+                                km/h
+                            </h5>
+                            <h5>
+                                <span>crew :</span> {crew}
+                            </h5>
+                            <h5>
+                                <span>passengers :</span>{" "}
                                 {passengers > 0 ? `${passengers}` : `None`}
                             </h5>
-                            <h5>cargo capacity : {cargo_capacity} units</h5>
+                            <h5>
+                                <span>cargo capacity :</span> {cargo_capacity}{" "}
+                                units
+                            </h5>
                         </article>
                     </div>
                 </SingleShipWrapper>
